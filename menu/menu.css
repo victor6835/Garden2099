@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* header--------------------------------------- */
+
+.main-header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+}
+
+.main-header .container {
+    width: 1556px;
+    height: 72px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-size: 0px;
+
+
+}
+
+.main-header .container .left {
+    width: 0;
+    flex-grow: 1;
+    margin-right: 80px;
+
+}
+
+.main-header .container .right {
+    width: 0;
+    flex-grow: 1;
+    margin-left: 80px;
+
+}
+
+.main-header .container a {
+    width: 200px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-header .container .about {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .menu {
+    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    background-color: #E5DF30;
+}
+
+.main-header .container .shop {
+    -webkit-clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .order {
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    background-color: #00e509;
+}
+
+.main-header .container .logo {
+    width: 180px;
+    height: 180px;
+    z-index: 5;
+}
+
+.main-header .container .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* banner---------------------------------- */
+
+.banner {
+    width: 100%;
+    height: 284px;
+    position: relative;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* menu------------------------------------- */
+
+.main-menu{
+    width: 100%;
+    height: 1580px;
+    background: linear-gradient(180deg, rgba(229, 223, 48), rgba(74, 229, 48));
+}
+.main-menu .container{
+    width: 1680px;
+    height: 100%;
+    margin: auto;
+    background-color: #000;
+    display: flex;
+}
+.main-menu .container .sidebar{
+    flex-grow: 1;
+    height: 680px;
+    text-align: center;
+    background-color: #191A24;
+    margin: 80px 40px;
+}
+.main-menu .sidebar .word-logo{
+    width: 100%;
+}
+.main-menu .sidebar a{
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+    text-decoration: none;
+    font-family:'Noto Sans TC', sans-serif;
+    font-size: 18px bold;
+    line-height: 140%;
+    padding: 30px 0;
+}
+.main-menu .sidebar h2{
+    padding-left: 24px;
+}
+.main-menu .container .menu-list{
+    flex-grow: 9;
+    height: 1340px;
+    padding-top: 80px;
+    margin-right: 40px;
+    display: grid;
+    gap: 24px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.main-menu .menu-list .card{
+    -webkit-clip-path: polygon(85% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(85% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+    background-color: #FBC528;
+    color: #000;
+    font-family:'Noto Sans TC', sans-serif;
+    padding: 40px 32px;
+    position: relative;
+}
+.main-menu .menu-list .card h2{
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-menu .menu-list .card p{
+    text-align: left;
+    font-size: 18px;
+    line-height: 140%;
+}
+.main-menu .menu-list .card span{
+    position: absolute;
+    right: 32px;
+    bottom: 16px;
+    font-size: 24px;
+}
+.main-menu .menu-list .page-move{
+    grid-column: 2;
+}
+.main-menu .menu-list .page-move a{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    color: #E5DF30;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+/* footer----------------------------------- */
+
+.main-footer{
+    width: 100%;
+    height: 278px;
+    background-color: #191A24;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 140%;
+    font-size: 20px;
+    /* align-items: center; */
+}
+.main-footer .container{
+    width: 1680px;
+    height: 150px;
+    display: flex;
+    padding: 64px 128px;
+    margin: auto;
+}
+
+.main-footer .container .logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.main-footer .container > .footer-item{
+    width: 0;
+    flex-grow: 1;
+}
+.footer-item{
+    display: flex;
+}
+.main-footer .nav{
+    display: flex;
+    padding: 64px;
+}
+.main-footer .nav .col1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+.main-footer .nav .col2{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item .cal1{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.footer-item nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-item .opentime{
+    padding-top: 64px;
+}
+.follow{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.follow img{
+
+    padding: 20px 20px 0px 0px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 84px;
+}

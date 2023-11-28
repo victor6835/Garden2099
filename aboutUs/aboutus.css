@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* header--------------------------------------- */
+
+.main-header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+}
+
+.main-header .container {
+    width: 1556px;
+    height: 72px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-size: 0px;
+
+
+}
+
+.main-header .container .left {
+    width: 0;
+    flex-grow: 1;
+    margin-right: 80px;
+
+}
+
+.main-header .container .right {
+    width: 0;
+    flex-grow: 1;
+    margin-left: 80px;
+
+}
+
+.main-header .container a {
+    width: 200px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-header .container .about {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .menu {
+    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    background-color: #E5DF30;
+}
+
+.main-header .container .shop {
+    -webkit-clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .order {
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    background-color: #00e509;
+}
+
+.main-header .container .logo {
+    width: 180px;
+    height: 180px;
+    z-index: 5;
+}
+
+.main-header .container .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* banner---------------------------------- */
+
+.banner {
+    width: 100%;
+    height: 284px;
+    position: relative;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* aboutus contant------------------------------------- */
+
+.aboutus{
+    width: 100%;
+    height: 2880px;
+    background-color: #000;
+}
+.aboutus .container{
+    width: 1680px;
+    margin: auto;
+    padding-top: 120px;
+    display: flex;
+    flex-flow: column;
+}
+.aboutus .container .box{
+    display: flex;
+    margin-bottom: 80px;
+    color: #fff;
+}
+.aboutus .container .box .pic{
+    width: 50%;
+}
+.aboutus .box .intro img{
+    max-width: 100%;
+    height: auto;
+}
+.aboutus .box .intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 140%;
+}
+
+.aboutus .box .intro h2{
+    line-height: 4em;
+}
+
+/* contactus----------------------------------------- */
+
+.contactus{
+    width: 100%;
+    height: 680px;
+    background-color: #FBC528;
+}
+.contactus .container{
+    width: 1396px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    padding-top: 120px;
+}
+.contactus .container .contact-info{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 50%;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.contactus .contact-info h1{
+    font-size: 48px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #000;
+}
+.contactus .contact-info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+    text-decoration: none;
+}
+.contactus .contact-info p{
+    display: inline-block;
+    padding-left: 24px;
+
+    color: #000;
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+.contactus .container .form{
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+}
+.contactus .container .form label{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+.contactus .container .form input{
+    display: block;
+    font-size: 24px;
+    padding: 4px 4px; 
+}
+.contactus .container .form textarea{
+    display: block;
+    font-size: 24px;
+    padding: 4px 4px; 
+}
+.contactus .container .form .submit{
+    border: 0;
+    background-color: #FBC528;
+    background-image: url(../aboutUs/button.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 120px;
+    margin: 20px;
+    align-self: flex-end;
+}
+
+/* footer----------------------------------- */
+
+.main-footer{
+    width: 100%;
+    height: 278px;
+    background-color: #191A24;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 140%;
+    font-size: 20px;
+    /* align-items: center; */
+}
+.main-footer .container{
+    width: 1680px;
+    height: 150px;
+    display: flex;
+    padding: 64px 128px;
+    margin: auto;
+}
+
+.main-footer .container .logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.main-footer .container > .footer-item{
+    width: 0;
+    flex-grow: 1;
+}
+.footer-item{
+    display: flex;
+}
+.main-footer .nav{
+    display: flex;
+    padding: 64px;
+}
+.main-footer .nav .col1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+.main-footer .nav .col2{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item .cal1{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.footer-item nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-item .opentime{
+    padding-top: 64px;
+}
+.follow{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.follow img{
+
+    padding: 20px 20px 0px 0px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 84px;
+}
+
+

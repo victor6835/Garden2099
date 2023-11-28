@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online-reserve</title>
+</head>
+<link rel="stylesheet" href="/reset.css">
+<link rel="stylesheet" href="online-reserve.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="left">
+                <a class="about" href="">關於我們</a>
+                <a href="" style="background-color: #E5DF30;">最新消息</a>
+                <a class="menu" href="">菜單</a>
+            </nav>
+            <div class="logo">
+                <img src="./footer/final logo.png" alt="">
+            </div>
+            <nav class="right">
+                <a class="shop" href="">線上購物</a>
+                <a href="" style="background-color: #E5DF30;">位置資訊</a>
+                <a class="order" href="">馬上訂位▼</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="./online-reserve/banner-onlinereserve.png" alt="" class="outside">
+    </div>
+
+    <div class="main-online-reserve">
+        <div class="container">
+            <header>
+                <h1>線上訂位</h1>
+                <small>歡迎蒞臨Garden 2099，有訂位需求的顧客，請填寫以下資訊</small>
+            </header>
+            <form action="" class="form">
+                <h4>用餐時間</h4>
+                <div class="time">
+                    <div class="date">
+                        <h5>用餐日期</h5>
+                        <label for="order_date"><input type="date" id="order_date">
+                    </div></label>
+                        
+                    <div class="moment">
+                        <h5>用餐時段</h5>
+                       <div class="moment-radio">
+                            <div class="left">
+                                <label for="11:00"><input type="radio" id="11:00" value="11:00">11:00</label><br>
+                                <label for="12:00"><input type="radio" id="12:00" value="12:00">12:00</label><br>
+                                <label for="13:00"> <input type="radio" id="13:00" value="13:00">13:00</label><br>
+                                <label for="14:00"><input type="radio" id="14:00" value="14:00">14:00</label><br>
+                                <label for="15:00"><input type="radio" id="15:00" value="15:00">15:00</label><br>
+                            </div>
+                            <div class="right">
+                                <label for="18:00"> <input type="radio" id="16:00" value="16:00">16:00</label><br>
+                                <label for="19:00"><input type="radio" id="17:00" value="17:00">17:00</label><br>
+                                <label for="19:00"><input type="radio" id="18:00" value="18:00">18:00</label><br>
+                                <label for="20:00"><input type="radio" id="19:00" value="19:00">19:00</label><br>
+                                <label for="20:00"><input type="radio" id="20:00" value="20:00">20:00</label><br>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <h4>用餐人數</h4>
+                <div class="people-number">
+
+                    <label for="adolt">大人</label>
+                    <select name="adolt" id="adolt">
+                        <option value="">請選擇人數</option>
+                    </select><br>
+                    <label for="child">小孩</label>
+                    <select name="child" id="child">
+                        <option value="">請選擇人數</option>
+                    </select>
+                </div>
+                <h4>訂位資訊</h4>
+                <div class="order-info">
+
+                    <label for="yourname">您的大名</label>
+                    <input type="text" id="yourname" value="" placeholder="請輸入您的大名"><br>
+                    <label for="tele">您的電話</label>
+                    <input type="text" id="yourfone" value="" placeholder="請輸入您的電話">
+
+                </div>
+                <button>送出</button> <div class="restaurant-info">
+                <h2>餐廳資訊</h2>
+                <p>營業時間: 周一 ~ 周五 11:00~21:00
+                    (周一公休)。<br>訂位將保留10分鐘，如違時視現場狀況重新安排座位；用餐時間2小時。,<br>信用卡付費享9折。<br>消費當日如需慶生請事先告知，本電會於甜點盤上裝飾祝賀文字。</p>
+            </div>
+            </form>
+           
+        </div>
+    </div>
+
+    <section class="main-footer">
+        <div class="container">
+            <a class="logo" href="#">
+                <img src="./footer/final logo.png" alt="">
+            </a>
+            <div class="footer-item nav">
+                <nav class="col1">
+                    <a href="#">加入會員</a>
+                    <a href="#">聯絡我們</a>
+                    <a href="#">禮券查詢</a>
+                </nav>
+                <nav class="col2">
+                    <a href="#">人才招募</a>
+                    <a href="#">合作詳情</a>
+                    <a href="#">隱私權政策及使用條款</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <p class="opentime">營業時間<br>周一 ~ 周五 11:00~21:00 (周一公休)</p>
+            </div>
+            <div class="footer-item follow">
+                <h4>FOLLOW US</h4>
+                <div class="icons">
+                    <img src="../footer/icon_ig.svg" alt="">
+                    <img src="../footer/icon_fb.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Garden 2099, Inc. All Rights Reserved.
+        </div>
+    </section>
+</body>

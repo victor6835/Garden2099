@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* header--------------------------------------- */
+
+.main-header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+}
+
+.main-header .container {
+    width: 1556px;
+    height: 72px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-size: 0px;
+
+
+}
+
+.main-header .container .left {
+    width: 0;
+    flex-grow: 1;
+    margin-right: 80px;
+
+}
+
+.main-header .container .right {
+    width: 0;
+    flex-grow: 1;
+    margin-left: 80px;
+
+}
+
+.main-header .container a {
+    width: 200px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-header .container .about {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .menu {
+    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    background-color: #E5DF30;
+}
+
+.main-header .container .shop {
+    -webkit-clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .order {
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    background-color: #00e509;
+}
+
+.main-header .container .logo {
+    width: 180px;
+    height: 180px;
+    z-index: 5;
+}
+
+.main-header .container .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* banner---------------------------------- */
+
+.banner {
+    width: 100%;
+    height: 840px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .slogon {
+    width: 480px;
+    position: absolute;
+    background-color: #191A24;
+    color: #fff;
+    right: 40px;
+    bottom: 20px;
+    font-size: 36px;
+    line-height: 140%;
+    padding: 10px;
+}
+
+/* blockone------------------- */
+
+.blockone{
+    width: 100%;
+    height: 940px;
+    background-color: #E5DF30;
+}
+.blockone .IST{
+    text-align: center;
+    padding: 120px 0px 40px 0px;
+}
+.blockone .IST h1{
+    font-size: 48px;
+    line-height: 140%;
+
+}
+.blockone .IST small{
+    font-size: 24px;
+    line-height: 140%;
+}
+.blockone .container{
+    width: 1680px;
+    margin: auto auto;
+    display: flex;
+    flex-flow: column;
+}
+.blockone .container .intro{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+
+}
+.blockone .container .intro .cards{
+    margin: 0 24px;
+    /* padding: 0 24px; */
+    height: 535px;
+    background-color: black;
+
+    color: #fff;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+}
+.blockone .container .intro .cards p{
+    padding: 36px 16px 16px 16px;
+}
+.blockone .container .intro .cards img{
+    margin: 16px 16px 0px 16px;
+}
+
+/*picinfo--------------------------------- */
+.picinfo{
+    width: 100%;
+    height: 1088px;
+    background-color: #000;
+}
+.picinfo .container{
+    margin: auto;
+    width: 1680px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.picinfo .topbar{
+    justify-content: center;
+    display: flex;
+    margin: 80px 0;
+}
+
+.picinfo .container .topbar .outside {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+}
+
+.picinfo .container .topbar .factory{
+    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+}
+.picinfo .container .topbar a {
+    width: 200px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #191A24;
+}
+
+.picinfo .shopintro{
+    width: 100%;
+    height: 736px;
+    display: flex;
+}
+.picinfo .shopintro .left-big{
+    width: 50%;
+}
+.picinfo .shopintro .left-big img{
+    max-width: 100%;
+    height: 100%;
+}
+.picinfo .shopintro .right-picinfo{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+.picinfo .shopintro .right-picinfo .picintro{
+    flex-grow: 2;
+    color: #fff;
+    margin-top: 100px;
+}
+.picinfo .shopintro .right-picinfo p{
+    font-size: 36px;
+    line-height: 140%;
+}
+.picinfo .shopintro .right-picinfo .smallpic{
+}
+.picinfo .right-picinfo .smallpic{
+    display: flex;
+}
+.picinfo .right-picinfo .smallpic img{
+    width: 256px;
+    height: 204px;
+    display: inline-block;
+    flex-grow: 2;
+    margin-right: 24px;
+
+
+}
+
+/* news----------------------------------------------- */
+
+.news{
+    width: 100%;
+    height: 850px;
+    background-color: #FBC528;
+}
+.news .container{
+    width: 1680px;
+    height: 100%;
+    margin: auto;
+}
+.news .container h2{
+    display: block;
+    text-align: center;
+    padding: 80px 0;
+
+    font-size: 48px;
+}
+.news .news-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.news .news-box .card{
+    width: 350px;
+    margin: 0 12px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    padding: 16px;
+}
+.news .news-box .small{
+    width: 280px;
+    height: 330px;
+    font-size: 10px;
+    line-height: 140%;
+}
+.news .news-box .middle{
+    width: 280px;
+    height: 380px;
+    font-size: 12px;
+    line-height: 140%;
+
+}
+.news .news-box .large{
+    width: 380px;
+    height: 430px;
+    font-size: 16px;
+}
+
+.news .news-box .card img{
+    width: 100%;
+    height: 150px;
+}
+.news .news-box .card h3{
+    font-size: 18px;
+    line-height: 140%;
+    padding-bottom: 16px;
+}
+.news .news-box .card p{
+    display: inline-block;
+    padding-bottom: 16px;
+}
+.news .news-box .card .date{
+    font-size: 14px;
+    text-align: end;
+}
+.news .icons{
+    text-align: center;
+    margin: 40px;
+}
+.news .icons img{
+    padding: 0 30px;
+}
+
+/* contact-------------------------------------------- */
+
+.contact{
+    width: 100%;
+    height: 680px;
+    background-color: #E5DF30;
+}
+.contact .container{
+    width: 1680px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.contact .map{
+    width: 50%;
+}
+.contact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact .contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.contact .contact-info nav{
+    /* display: flex; */
+}
+.contact .contact-info a{
+    display: flex;
+    padding: 16px 24px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+.contact .contact-info img{
+    padding-right: 24px;
+}    
+
+/* footer----------------------------------- */
+
+.main-footer{
+    width: 100%;
+    height: 278px;
+    background-color: #191A24;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 140%;
+    font-size: 20px;
+    /* align-items: center; */
+}
+.main-footer .container{
+    width: 1680px;
+    height: 150px;
+    display: flex;
+    padding: 64px 128px;
+    margin: auto;
+}
+
+.main-footer .container .logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.main-footer .container > .footer-item{
+    width: 0;
+    flex-grow: 1;
+}
+.footer-item{
+    display: flex;
+}
+.main-footer .nav{
+    display: flex;
+    padding: 64px;
+}
+.main-footer .nav .col1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+.main-footer .nav .col2{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item .cal1{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.footer-item nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-item .opentime{
+    padding-top: 64px;
+}
+.follow{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.follow img{
+
+    padding: 20px 20px 0px 0px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 84px;
+}

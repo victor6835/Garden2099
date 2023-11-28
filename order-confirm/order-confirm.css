@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* header--------------------------------------- */
+
+.main-header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+}
+
+.main-header .container {
+    width: 1556px;
+    height: 72px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-size: 0px;
+}
+
+.main-header .container .left {
+    width: 0;
+    flex-grow: 1;
+    margin-right: 80px;
+}
+
+.main-header .container .right {
+    width: 0;
+    flex-grow: 1;
+    margin-left: 80px;
+
+}
+
+.main-header .container a {
+    width: 200px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-header .container .about {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .menu {
+    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    background-color: #E5DF30;
+}
+
+.main-header .container .shop {
+    -webkit-clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .order {
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    background-color: #00e509;
+}
+
+.main-header .container .logo {
+    width: 180px;
+    height: 180px;
+    z-index: 5;
+}
+
+.main-header .container .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* banner---------------------------------- */
+
+.banner {
+    width: 100%;
+    height: 284px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* .main-order-confirmed(名字同main-cart檔案---------------- */
+
+.main-cart {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(229, 223, 48), rgba(74, 229, 48));
+}
+
+.main-cart .container {
+    position: relative;
+    width: 1680px;
+    height: 100%;
+    margin: auto;
+    background-color: #000;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #000;
+}
+
+/* ordernumber--------------------------- */
+
+.main-cart .ordernumber{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 120px;
+
+    font-size: 48px;
+}
+.main-cart .ordernumber h2{
+    display: block;
+    padding: 40px 0;
+    color: #ffffff;
+}
+.main-cart .ordernumber .order-detail{
+    font-size: 36px;
+}
+
+.main-cart .cart-list {
+    width: 1366px;
+    margin: auto;
+    padding-top: 80px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+.main-cart .cart-list table {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    width: 100%;
+    background-color: #FBC528;
+}
+
+.main-cart .cart-list th {
+    background-color: #191A24;
+    color: #ffffff;
+    width: 25vw;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.main-cart .cart-list td {
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main-cart .cart-list tr {
+    /* border-bottom: 1px solid #dddddd; */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-cart .cart-list img {
+    padding: 0 8px;
+}
+
+.main-cart .pay-info{
+    color: #ffffff;
+    width: 402px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.main-cart .pay-info table {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    width: 400px;
+    background-color: #191A24;
+}
+
+.main-cart .pay-info th {
+    /* height: 24px; */
+    background-color: #FBC528;
+    color: #000;
+    vertical-align: middle;
+}
+.main-cart .pay-info td {
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+.main-cart .pay-info .total{
+    font-size: 32px;
+}
+.main-cart .sent button{
+    display: inline-block;
+    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    background-color: #FBC528;
+    border: none;
+    padding: 16px 84px;
+
+    font-size: 24px;
+}
+
+/* footer----------------------------------- */
+
+.main-footer{
+    width: 100%;
+    height: 278px;
+    background-color: #191A24;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 140%;
+    font-size: 20px;
+    align-items: center;
+}
+.main-footer .container{
+    width: 1680px;
+    height: 150px;
+    display: flex;
+    padding: 64px 128px;
+    margin: auto;
+}
+
+.main-footer .container .logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.main-footer .container > .footer-item{
+    width: 0;
+    flex-grow: 1;
+}
+.footer-item{
+    display: flex;
+}
+.main-footer .nav{
+    display: flex;
+    padding: 64px;
+}
+.main-footer .nav .col1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+.main-footer .nav .col2{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item .cal1{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.footer-item nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-item .opentime{
+    padding-top: 64px;
+}
+.follow{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.follow img{
+
+    padding: 20px 20px 0px 0px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 84px;
+}
