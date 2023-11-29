@@ -56,18 +56,18 @@
                         <h5>用餐時段</h5>
                         <div class="moment-radio">
                             <div class="left">
-                                <label for="11:00"><input type="radio" id="11:00" value="11:00">11:00</label><br>
-                                <label for="12:00"><input type="radio" id="12:00" value="12:00">12:00</label><br>
-                                <label for="13:00"> <input type="radio" id="13:00" value="13:00">13:00</label><br>
-                                <label for="14:00"><input type="radio" id="14:00" value="14:00">14:00</label><br>
-                                <label for="15:00"><input type="radio" id="15:00" value="15:00">15:00</label><br>
+                                <label for="11:00"><input name="time" type="radio" id="11:00" value="11:00">11:00</label><br>
+                                <label for="12:00"><input name="time" type="radio" id="12:00" value="12:00">12:00</label><br>
+                                <label for="13:00"> <input name="time" type="radio" id="13:00" value="13:00">13:00</label><br>
+                                <label for="14:00"><input name="time" type="radio" id="14:00" value="14:00">14:00</label><br>
+                                <label for="15:00"><input name="time" type="radio" id="15:00" value="15:00">15:00</label><br>
                             </div>
                             <div class="right">
-                                <label for="18:00"> <input type="radio" id="16:00" value="16:00">16:00</label><br>
-                                <label for="19:00"><input type="radio" id="17:00" value="17:00">17:00</label><br>
-                                <label for="19:00"><input type="radio" id="18:00" value="18:00">18:00</label><br>
-                                <label for="20:00"><input type="radio" id="19:00" value="19:00">19:00</label><br>
-                                <label for="20:00"><input type="radio" id="20:00" value="20:00">20:00</label><br>
+                                <label for="18:00"> <input name="time" type="radio" id="16:00" value="16:00">16:00</label><br>
+                                <label for="19:00"><input name="time" type="radio" id="17:00" value="17:00">17:00</label><br>
+                                <label for="19:00"><input name="time" type="radio" id="18:00" value="18:00">18:00</label><br>
+                                <label for="20:00"><input name="time" type="radio" id="19:00" value="19:00">19:00</label><br>
+                                <label for="20:00"><input name="time" type="radio" id="20:00" value="20:00">20:00</label><br>
                             </div>
                         </div>
                     </div>
@@ -97,21 +97,6 @@
                 </div>
 
                 <button id="OlineReserve">送出</button>
-
-                <script>
-                    $(document).ready(function () {
-                        // 當按鈕被點擊時
-                        $("#OlineReserve").click(function (event) {
-                            // 使用 window.location.href 跳轉到指定的頁面
-                            window.location.href = "/Garden2099/reserve-confirmed/reserve-confirm.html";
-
-                            // 阻止表單的默認提交行為
-                            event.preventDefault();
-                        });
-                    });
-
-                </script>
-
 
                 <div class="restaurant-info">
                     <h2>餐廳資訊</h2>
@@ -159,7 +144,19 @@
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            // 當按鈕被點擊時
+            $("#OlineReserve").click(function (event) {
+                // 使用 window.location.href 跳轉到指定的頁面
+                window.location.href = "/Garden2099/reserve-confirmed/reserve-confirm.html";
+    
+                // 阻止表單的默認提交行為
+                event.preventDefault();
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
