@@ -205,6 +205,7 @@
     padding: 16px 40px;
     font-family:'Noto Sans TC', sans-serif;
     font-size: 24px;
+    cursor: pointer;
 }
 .main-item .info-price .addcart{
     background-color: #FBC528;
