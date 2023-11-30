@@ -1,4 +1,6 @@
-* {
+body, html {
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
 }
@@ -10,35 +12,35 @@
     height: 120px;
     background-color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-header .container {
-    width: 1556px;
+    width: 1400px;
     height: 72px;
-    justify-content: center;
-    display: flex;
-    margin: auto;
+    margin: 0 80px;
     font-size: 0px;
-
-
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .main-header .container .left {
-    width: 0;
-    flex-grow: 1;
-    margin-right: 80px;
-
+    width: 100%;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .main-header .container .right {
-    width: 0;
-    flex-grow: 1;
-    margin-left: 80px;
-
+    width: 100%;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .main-header .container a {
-    width: 200px;
+    width: 100%;
     height: 72px;
     line-height: 72px;
     text-align: center;
@@ -48,6 +50,18 @@
     font-size: 24px;
     text-decoration: none;
     color: black;
+}
+.main-header .container .left a:hover{
+    background-color: #00e509;
+}
+.main-header .container .right a:hover{
+    background-color: #00e509;
+}
+.main-header .container .news{
+    background-color: #E5DF30;
+}
+.main-header .container .position{
+    background-color: #E5DF30;
 }
 
 .main-header .container .about {
@@ -72,6 +86,10 @@
     -webkit-clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
     clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
     background-color: #00e509;
+    transition: .3s;
+}
+.main-header .container .order:hover {
+    scale: 1.2;
 }
 
 .main-header .container .logo {
@@ -81,9 +99,9 @@
 }
 
 .main-header .container .logo img {
-    width: 100%;
     height: 100%;
 }
+
 
 /* banner---------------------------------- */
 
