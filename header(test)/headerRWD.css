@@ -1,0 +1,80 @@
+.main-header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+}
+
+.main-header .container {
+    max-width:1600px;
+    height: 72px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-size: 0px;
+
+
+}
+
+.main-header .container .left {
+    width: 0;
+    flex-grow: 1;
+    margin-right: 80px;
+
+}
+
+.main-header .container .right {
+    width: 0;
+    flex-grow: 1;
+    margin-left: 80px;
+
+}
+
+.main-header .container a {
+    width: 200px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-header .container .about {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .menu {
+    -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    background-color: #E5DF30;
+}
+
+.main-header .container .shop {
+    -webkit-clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    background-color: #E5DF30;
+}
+
+.main-header .container .order {
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 76% 100%, 0 100%, 0 0);
+    background-color: #00e509;
+}
+
+.main-header .container .logo {
+    width: 180px;
+    height: 180px;
+    z-index: 5;
+}
+
+.main-header .container .logo img {
+    width: 100%;
+    height: 100%;
+}
+
