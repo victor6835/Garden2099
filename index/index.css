@@ -20,7 +20,7 @@ html {
     top: 0;
     z-index: 10;
     transition: top 0.3s, box-shadow 0.3s;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
 .main-header .container {
@@ -123,18 +123,17 @@ html {
 @media (max-width: 1400px) {
     .main-header {
         height: 80px;
-        padding-top: ;
     }
 
     .main-header .container {
-        height: 40px;
+        height: 48px;
         margin: auto 80px;
     }
 
     .main-header .container a {
         height: 100%;
         font-size: 16px;
-        line-height: 40px;
+        line-height: 48px;
     }
 
     .main-header .container .logo {
@@ -490,11 +489,6 @@ html {
     width: 50%;
     height: 100%;
 }
-
-.contact .contact-info nav {
-    /* display: flex; */
-}
-
 .contact .contact-info a {
     display: flex;
     padding: 16px 24px;
@@ -577,14 +571,14 @@ html {
     color: #fff;
     text-decoration: none;
 }
-.follow {
+.main-footer .follow {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-.follow img {
+.main-footer .follow img {
 
     padding: 20px 20px 0px 0px;
 }
