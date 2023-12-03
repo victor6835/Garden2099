@@ -44,6 +44,8 @@ body,html{
 }
 .aboutus .container .box .pic{
     width: 50%;
+    display: flex;
+    align-items: center;
 }
 .aboutus .box img{
     aspect-ratio: 828 / 600;
@@ -54,15 +56,17 @@ body,html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 60px;
 
     font-size: 24px;
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 140%;
+    padding: 0 60px;
+
 }
 
 .aboutus .box .intro h2{
     line-height: 4em;
+    font-size: 32px;
 }
 
 /* contactus----------------------------------------- */

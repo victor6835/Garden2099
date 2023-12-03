@@ -5,6 +5,7 @@ html {
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #000;
+    scroll-behavior: smooth;
 }
 
 /* banner---------------------------------- */
@@ -85,7 +86,7 @@ html {
 }
 
 .blockone .container .intro .cards {
-    width: 33.3333%;
+    width: 33.33333%;
     margin: 0 24px;
     padding: 16px;
     /* height: 535px; */
