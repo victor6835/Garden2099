@@ -173,5 +173,21 @@
         </div>
     </section>
     <a href="/Garden2099/cart/cart.html" class="big-cart"><img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon-cart-big.svg?alt=media&token=b077661e-dbdc-405e-a06e-714adbfadccb" alt=""></a>
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const header = document.querySelector("header"); // 根據你的 HTML 結構確保正確的選擇器
+
+        window.onscroll = function () {
+            const currentScrollPos = window.pageYOffset;
+            const scrollThreshold = 200; // 根據需要調整閾值
+
+            if (prevScrollPos > currentScrollPos || currentScrollPos < scrollThreshold) {
+                header.classList.remove("hidden");
+            } else {
+                header.classList.add("hidden");
+            }
+            prevScrollPos = currentScrollPos;
+        };
+    </script>
 </body>
 </html>

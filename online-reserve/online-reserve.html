@@ -33,25 +33,6 @@
             </nav>
         </div>
     </header>
-    <script>
-        let prevScrollPos = window.pageYOffset;
-        const header = document.querySelector("header"); // 根據你的 HTML 結構確保正確的選擇器
-
-        window.onscroll = function () {
-            const currentScrollPos = window.pageYOffset;
-            const scrollThreshold = 200; // 根據需要調整閾值
-
-            if (prevScrollPos > currentScrollPos || currentScrollPos < scrollThreshold) {
-                header.classList.remove("hidden");
-            } else {
-                header.classList.add("hidden");
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-
-
-    </script>
 
     <div class="banner">
         <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fbanner-onlinereserve.png?alt=media&token=b15bcc6a-2f5b-4108-9873-ffca9955f991"
@@ -187,6 +168,22 @@
                 event.preventDefault();
             });
         });
+    </script>
+       <script>
+        let prevScrollPos = window.pageYOffset;
+        const header = document.querySelector("header"); // 根據你的 HTML 結構確保正確的選擇器
+
+        window.onscroll = function () {
+            const currentScrollPos = window.pageYOffset;
+            const scrollThreshold = 200; // 根據需要調整閾值
+
+            if (prevScrollPos > currentScrollPos || currentScrollPos < scrollThreshold) {
+                header.classList.remove("hidden");
+            } else {
+                header.classList.add("hidden");
+            }
+            prevScrollPos = currentScrollPos;
+        };
     </script>
 
 </body>
