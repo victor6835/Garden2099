@@ -8,6 +8,8 @@
 </head>
 <link rel="stylesheet" href="../reset.css">
 <link rel="stylesheet" href="online-reserve.css">
+<link rel="stylesheet" href="/Garden2099/header/headerRWD.css">
+<link rel="stylesheet" href="/Garden2099/footer/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
@@ -18,7 +20,7 @@
         <div class="container">
             <nav class="left">
                 <a class="about" href="/Garden2099/aboutUs/aboutus.html">關於我們</a>
-                <a href="/Garden2099/index.html#news" style="background-color: #E5DF30;">最新消息</a>
+                <a class="news" href="/Garden2099/index.html#news">最新消息</a>
                 <a class="menu" href="/Garden2099/menu/menu.html">菜單</a>
             </nav>
             <a href="/Garden2099/index.html" class="logo"><img
@@ -26,11 +28,30 @@
                     alt=""></a>
             <nav class="right">
                 <a class="shop" href="/Garden2099/onlineShop/onlineShop.html">線上購物</a>
-                <a href="/Garden2099/index.html#position" style="background-color: #E5DF30;">位置資訊</a>
+                <a class="position" href="/Garden2099/index.html#position">位置資訊</a>
                 <a class="order" href="/Garden2099/online-reserve/online-reserve.html">馬上訂位▼</a>
             </nav>
         </div>
     </header>
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const header = document.querySelector("header"); // 根據你的 HTML 結構確保正確的選擇器
+
+        window.onscroll = function () {
+            const currentScrollPos = window.pageYOffset;
+            const scrollThreshold = 200; // 根據需要調整閾值
+
+            if (prevScrollPos > currentScrollPos || currentScrollPos < scrollThreshold) {
+                header.classList.remove("hidden");
+            } else {
+                header.classList.add("hidden");
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
+
+
+    </script>
 
     <div class="banner">
         <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fbanner-onlinereserve.png?alt=media&token=b15bcc6a-2f5b-4108-9873-ffca9955f991"
@@ -50,24 +71,35 @@
                         <h5>用餐日期</h5>
                         <label for="order_date"></label><input type="date" id="order_date">
                     </div>
-                    
+
 
                     <div class="moment">
                         <h5>用餐時段</h5>
                         <div class="moment-radio">
                             <div class="left">
-                                <label for="11:00"><input name="time" type="radio" id="11:00" value="11:00">11:00</label><br>
-                                <label for="12:00"><input name="time" type="radio" id="12:00" value="12:00">12:00</label><br>
-                                <label for="13:00"> <input name="time" type="radio" id="13:00" value="13:00">13:00</label><br>
-                                <label for="14:00"><input name="time" type="radio" id="14:00" value="14:00">14:00</label><br>
-                                <label for="15:00"><input name="time" type="radio" id="15:00" value="15:00">15:00</label><br>
+                                <label for="11:00"><input name="time" type="radio" id="11:00"
+                                        value="11:00">11:00</label><br>
+                                <label for="12:00"><input name="time" type="radio" id="12:00"
+                                        value="12:00">12:00</label><br>
+                                <label for="13:00"> <input name="time" type="radio" id="13:00"
+                                        value="13:00">13:00</label><br>
+                                <label for="14:00"><input name="time" type="radio" id="14:00"
+                                        value="14:00">14:00</label><br>
+                                <label for="15:00"><input name="time" type="radio" id="15:00"
+                                        value="15:00">15:00</label><br>
                             </div>
                             <div class="right">
-                                <label for="18:00"> <input name="time" type="radio" id="16:00" value="16:00">16:00</label><br>
-                                <label for="19:00"><input name="time" type="radio" id="17:00" value="17:00">17:00</label><br>
-                                <label for="19:00"><input name="time" type="radio" id="18:00" value="18:00">18:00</label><br>
-                                <label for="20:00"><input name="time" type="radio" id="19:00" value="19:00">19:00</label><br>
-                                <label for="20:00"><input name="time" type="radio" id="20:00" value="20:00">20:00</label><br>
+                                <label for="16:00"><input name="time" type="radio" id="16:00"
+                                        value="16:00">16:00</label><br>
+                                <label for="17:00"><input name="time" type="radio" id="17:00"
+                                        value="17:00">17:00</label><br>
+                                <label for="18:00"><input name="time" type="radio" id="18:00"
+                                        value="18:00">18:00</label><br>
+                                <label for="19:00"><input name="time" type="radio" id="19:00"
+                                        value="19:00">19:00</label><br>
+                                <label for="20:00"><input name="time" type="radio" id="20:00"
+                                        value="20:00">20:00</label><br>
+
                             </div>
                         </div>
                     </div>
@@ -150,13 +182,13 @@
             $("#OlineReserve").click(function (event) {
                 // 使用 window.location.href 跳轉到指定的頁面
                 window.location.href = "/Garden2099/reserve-confirmed/reserve-confirm.html";
-    
+
                 // 阻止表單的默認提交行為
                 event.preventDefault();
             });
         });
     </script>
-    
+
 </body>
 
 </html>
