@@ -34,22 +34,7 @@
         </div>
         
     </header>
-    <script>
-        let prevScrollPos = window.pageYOffset;
-        window.onscroll = function () {
-            const currentScrollPos = window.pageYOffset;
-            const header = document.querySelector(".main-header");
-
-            if (prevScrollPos > currentScrollPos) {
-                header.classList.remove("hidden");
-            } else {
-                header.classList.add("hidden");
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
-
+ 
     <div class="banner">
         <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Forder-confirm%20banner.png?alt=media&token=0263955c-5af0-4408-9199-5db3a90faa14" alt="" class="outside">
     </div>

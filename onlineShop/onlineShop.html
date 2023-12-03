@@ -33,22 +33,7 @@
             </nav>
         </div>
     </header>
-    <script>
-        let prevScrollPos = window.pageYOffset;
-        window.onscroll = function () {
-            const currentScrollPos = window.pageYOffset;
-            const header = document.querySelector(".main-header");
-
-            if (prevScrollPos > currentScrollPos) {
-                header.classList.remove("hidden");
-            } else {
-                header.classList.add("hidden");
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
-
+  
     <div class="banner">
         <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fbanner.onlineShop.png?alt=media&token=48d05f7d-148d-4ab8-bfb7-50421efe86a1" alt="" class="outside">
     </div>
