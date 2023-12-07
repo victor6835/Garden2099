@@ -22,6 +22,7 @@ html {
 }
 .banner img {
     width: 100%;
+    height: 100%;
     object-fit:cover;
 }
 
@@ -71,12 +72,14 @@ html {
     position: absolute;
     background-color: #191A24;
     color: #fff;
-    right: 40px;
-    bottom: 20px;
+    right: 0px;
+    bottom: 0px;
     font-size: 36px;
     line-height: 140%;
     padding: 10px;
 }
+
+/* RWD-banner---------------------------- */
 
 @media (max-width:1400px) {
     .banner {
@@ -86,6 +89,12 @@ html {
     .banner .slogon {
         width: 360px;
         font-size: 24px;
+    }
+}
+@media (max-width:960px) {
+    .banner .slogon{
+        font-size: 16px;
+        width: 240px;
     }
 }
 
