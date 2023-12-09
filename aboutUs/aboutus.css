@@ -89,6 +89,9 @@ body,html{
         font-family: 'Noto Sans TC', sans-serif;
         line-height: 140%;
     }
+    .aboutus .box .intro h2{
+        align-self: center;
+    }
 }
 /* contactus----------------------------------------- */
 
@@ -174,6 +177,11 @@ body,html{
         font-size: 32px;
         padding-bottom: 24px;
         margin-bottom: 40px;
+    }
+    .contactus .container .tele-mail{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
     }
     .contactus .contact-info img{
         width: 20px;
