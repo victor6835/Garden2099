@@ -5,28 +5,6 @@ html {
     background-color: #000;
 }
 
-/* banner---------------------------------- */
-
-.banner {
-    padding-top: 120px;
-    width: 100%;
-    height: 284px;
-    position: relative;
-    overflow: hidden;
-}
-
-@media (max-width:1400px) {
-    .banner {
-        padding-top: 80px;
-        height: 240px;
-    }
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-}
-
 /* menu------------------------------------- */
 
 .main-menu {
@@ -42,6 +20,7 @@ html {
     padding: 80px;
     background-color: #000;
     display: flex;
+    gap: 24px;
 }
 
 .main-menu .container .sidebar {
@@ -49,7 +28,10 @@ html {
     height: 100%;
     text-align: left;
     background-color: #191A24;
-    margin-right: 24px;
+    padding: 24px;
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
 }
 
 .main-menu .word-logo img{
@@ -63,7 +45,6 @@ html {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 18px bold;
     line-height: 140%;
-    padding: 24px;
 }
 .main-menu .sidebar a:hover {
     background-color: #6acd6d;
@@ -77,9 +58,8 @@ html {
 }
 
 .main-menu .container .menu-list {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin-right: 40px;
     display: grid;
     gap: 24px;
     text-align: center;
@@ -111,14 +91,14 @@ html {
 
 .main-menu .menu-list .card p {
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 140%;
 }
 
 .main-menu .menu-list .card span {
     position: absolute;
-    right: 32px;
-    bottom: 16px;
+    right: 3%;
+    bottom: 3%;
     font-size: 24px;
 }
 
@@ -135,4 +115,28 @@ html {
     color: #E5DF30;
     text-decoration: none;
     font-size: 32px;
+}
+@media (max-width:960px) {
+    .main-menu .container {
+        max-width: 1400px;
+        height: 100%;
+        margin: auto;
+        padding: 24px;
+        background-color: #000;
+        display: flex;
+    }    
+    .main-menu .container .menu-list {
+        width: 80%;
+        height: 100%;
+        display: grid;
+        gap: 24px;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .main-menu .menu-list .page-move {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+    }
 }
