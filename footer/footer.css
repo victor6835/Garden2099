@@ -1,4 +1,5 @@
-.main-footer {
+@media (min-width:769px) {
+    .main-footer {
     width: 100%;
     height: 278px;
     background-color: #191A24;
@@ -6,7 +7,7 @@
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 160%;
     font-size: 20px;
-    /* align-items: center; */
+    align-items: center; 
 }
 
 .main-footer .container {
@@ -32,7 +33,7 @@
     flex-grow: 2;
 }
 
-.footer-item {
+.main-footer .footer-item {
     display: flex;
 }
 
@@ -58,13 +59,13 @@
 .main-footer .nav .opentime{
     width: 50%
 }
-.footer-item .cal1 {
+.main-footer .footer-item .cal1 {
     height: 100%;
     display: flex;
     flex-flow: column wrap;
 }
 
-.footer-item nav a {
+.main-footer .footer-item nav a {
     color: #fff;
     text-decoration: none;
 }
@@ -81,13 +82,98 @@
     gap: 16px;
 }
 
-.copyright {
+.main-footer .copyright {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-@media (max-width:960px) {
-    .main-footer{
-        font-size: 16px;
+}
+
+/* laptop */
+
+/* phone */
+@media (max-width:768px) {
+    .main-footer {
+        width: 100%;
+        background-color: #191A24;
+        color: #fff;
+        font-family: 'Noto Sans TC', sans-serif;
+        line-height: 160%;
+        font-size: 20px;
+    }
+    
+    .main-footer .container {
+        height: 100%; 
+        padding: 40px;
+        display: flex;
+        flex-flow: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .main-footer .container .logo img {
+        width: 150px;
+        height: 150px;
+    }
+    .footer-item {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main-footer .nav {
+        display: flex;
+        flex-flow: column;
+        gap: 24px;
+    }
+    
+    .main-footer .nav .col1 {
+        /* width: 100%; */
+        gap: 24px;
+        display: flex;
+        justify-content: center;
+    }
+    .main-footer .nav .col1 a{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+    .main-footer .nav .col2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+    .main-footer .opentime {
+        text-align: center;
+    }
+    .footer-item .cal1 {
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .footer-item nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .main-footer .follow {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .main-footer .follow .icons {
+        display: flex;
+        gap: 16px;
+    }
+    
+    .copyright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
+

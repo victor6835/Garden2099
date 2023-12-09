@@ -155,8 +155,7 @@ html {
 }
 
 .blockone .container .intro .cards {
-    width: 33.33333%;                                   
-    /* height: 100%; */
+    width: 33.33333%;
     padding: 8px;
     background-color: black;
 
@@ -172,6 +171,63 @@ html {
 
 .blockone .container .intro .cards img {
     width: 100%;
+}
+
+@media (max-width:768px) {
+    .blockone {
+        width: 100%;
+        height: 100%;
+        background-color: #E5DF30;
+    }
+
+    .blockone .container {
+        max-width: 1400px;
+        height: 100%;
+        padding: 24px 16px;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .blockone .IST {
+        text-align: center;
+    }
+
+    .blockone .IST h1 {
+        font-size: 36px;
+        line-height: 140%;
+        padding-bottom: 24px;
+
+    }
+
+    .blockone .container .intro {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        gap: 24px;
+    }
+
+    .blockone .container .intro .cards {
+        width: 100%;
+        box-sizing: border-box;
+        /* height: 100%; */
+        padding: 8px;
+        background-color: black;
+
+        color: #fff;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+    }
+
+    .blockone .container .intro .cards p {
+        padding: 16px;
+    }
+
+    .blockone .container .intro .cards img {
+        width: 100%;
+        aspect-ratio: 512 / 411;
+    }
 }
 
 /*picinfo--------------------------------- */
@@ -194,6 +250,9 @@ html {
     justify-content: center;
     display: flex;
     margin-bottom: 40px;
+}
+.picinfo .topbar-phone {
+    display: none;
 }
 
 .picinfo .container .topbar .outside {
@@ -224,7 +283,6 @@ html {
     width: 100%;
     height: 100%;
     display: flex;
-    /* align-items: flex-end; */
     gap: 80px;
 }
 
@@ -280,16 +338,110 @@ html {
         font-size: 28px;
     }
 }
+
 @media (max-width:960px) {
     .picinfo .shopintro .right-picinfo p {
         font-size: 20px;
     }
+
     .picinfo .container .topbar a {
         width: 200px;
         height: 48px;
         line-height: 48px;
         font-size: 20px;
     }
+}
+
+@media (max-width:414px) {
+    .picinfo .container {
+        max-width: 1400px;
+        height: 100%;
+        margin: auto;
+        padding: 24px 16px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .picinfo .topbar {
+        margin-bottom: 24px;
+    }
+
+    .picinfo .shopintro {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        gap: 24px;
+    }
+
+    .picinfo .shopintro .right-picinfo .smallpic {
+        display: none;
+    }
+
+    .picinfo .shopintro .right-picinfo {
+        width: 100%;
+    }
+
+    .picinfo .shopintro .left-big {
+        width: 100%;
+    }
+
+    .picinfo .shopintro .left-big img {
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .picinfo .topbar {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .picinfo .topbar .outside, .picinfo .topbar .factory, .picinfo .topbar .inner{
+        display: none;
+        visibility: hidden;
+    }
+
+    .picinfo .container .topbar .outside {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
+    }
+
+    .picinfo .container .topbar .factory {
+        -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    }
+    .picinfo .topbar-options{
+        display: none;
+    }
+    .picinfo .topbar{
+        margin-bottom: 24px;
+    }
+    .picinfo .topbar-phone {
+        display: flex;
+    }
+    .picinfo .topbar-phone p{
+        width: 100%;
+        height: 100%;
+        line-height: 48px;
+        display: flex;
+        display: inline-block;
+        padding: 0 16px;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 24px;
+        text-decoration: none;
+        text-align: center;
+        color: #000;
+        background-color: #FBC528;
+    }
+    .picinfo .container .topbar a {
+        width: 100%;
+        background-color: #000;
+    }
+
+    .picinfo .topbar-phone img{
+        height: 100%;
+    }
+
 }
 
 /* news----------------------------------------------- */
@@ -427,29 +579,34 @@ html {
 
 .contact .contact-info a {
     display: flex;
+    align-items: center;
     padding: 16px 0;
     font-size: 20px;
     text-decoration: none;
     color: #000;
 }
 
-.contact .contact-info img{
+.contact .contact-info img {
     padding-right: 24px;
 }
+
 @media (max-width:960px) {
-    .contact .container{
+    .contact .container {
         flex-flow: column;
         padding: 24px;
     }
-    .contact .map{
+
+    .contact .map {
         width: 100%;
     }
+
     .contact .contact-info {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
+
     .contact .contact-info a {
         display: flex;
         padding: 8px 0;
@@ -457,14 +614,17 @@ html {
         text-decoration: none;
         color: #000;
     }
+
     .contact .contact-info img {
         width: 24px;
         height: 24px;
     }
-    .contact .map{
+
+    .contact .map {
         width: 100%;
         height: 300px;
     }
+
     .contact .map iframe {
         width: 100%;
         height: 100%;

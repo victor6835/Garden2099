@@ -74,6 +74,8 @@
 
 .main-header .container .position {
     background-color: #E5DF30;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%, 0 100%);
 }
 
 .main-header .container .about {
@@ -273,6 +275,14 @@
         .logo {
             margin: auto;
             padding-top: 16px;
-        }
 
+        }
+        
+    }
+    @media (max-width:768px) {
+        .main-header .container .logo {
+            width: 120px;
+            height: 120px;
+            z-index: 5;
+        }
     }
