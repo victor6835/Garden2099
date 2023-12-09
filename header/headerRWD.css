@@ -129,20 +129,21 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     padding: 6px 12px 12px 0;
     display: flex;
     flex-direction: column;
     margin-right: 12px;
+    margin-top: 10px;
 }
 
 .menu-toggle span {
     display: block;
     height: 100%;
     width: 100%;
-    border-bottom: 5px solid #E5DF30;
+    border-bottom: 3px solid #E5DF30;
     justify-content: space-evenly;
 }
 
@@ -172,8 +173,7 @@
     .nav_popup {
         display: block;
         position: fixed;
-        padding: 16px;
-        padding-top: 80px;
+        padding-top: 40px;
         text-align: center;
         top: 0;
         left: 0;
@@ -185,12 +185,12 @@
         transition: all .3s;
     }
 
-    .nav_popup a {
+    .nav_popup .options {
         color: #fff;
         display: block;
         font-size: 24px;
         text-decoration: none;
-        padding: 40px;
+        padding: 30px;
     }
 
     .nav_popup .icons img {
@@ -213,7 +213,7 @@
         background-color: #fff;
         position: absolute;
         top: 50%;
-        right: 50%;
+        right: 10%;
     }
     .popup-close span:nth-child(1){
         transform: translateY(-50deg); rotate: 45deg;
