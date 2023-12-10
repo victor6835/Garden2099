@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #000;
@@ -6,47 +7,55 @@ html,body{
 
 /* .main-item-------------------------------------- */
 
-.main-item{
+.main-item {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(229, 223, 48), rgba(74, 229, 48));
 }
-.main-item .container{
+
+.main-item .container {
     position: relative;
     max-width: 1400px;
     height: 100%;
     margin: auto;
     padding: 80px;
     background-color: #000;
-    font-family:'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     color: #fff;
 }
-.main-item .container .item-info{
+
+.main-item .container .item-info {
     display: flex;
 }
-.main-item .item-info .imgs{
+
+.main-item .item-info .imgs {
     width: 50%;
     display: flex;
     flex-flow: column;
     gap: 24px;
 }
-.main-item .item-info .imgs .bigpic img{
+
+.main-item .item-info .imgs .bigpic img {
     width: 100%;
     aspect-ratio: 685 / 440;
 }
-.main-item .item-info .imgs .smallpic{
+
+.main-item .item-info .imgs .smallpic {
     display: flex;
     width: 100%;
     overflow: hidden;
 }
-.main-item .item-info .smallpic img{
+
+.main-item .item-info .smallpic img {
     width: 33.33333%;
     aspect-ratio: 260 / 160;
 }
-.main-item .item-info .smallpic img:nth-child(2){
+
+.main-item .item-info .smallpic img:nth-child(2) {
     padding: 0 12px;
 }
-.main-item .info-price{
+
+.main-item .info-price {
     width: 50%;
     display: flex;
     flex-flow: column;
@@ -56,64 +65,78 @@ html,body{
     padding-left: 80px;
     position: relative;
 }
-.main-item .info-price h1{
+
+.main-item .info-price h1 {
     font-size: 48px;
 }
-.main-item .info-price h2{
+
+.main-item .info-price h2 {
     font-size: 36px;
 }
-.main-item .info-price p{
+
+.main-item .info-price p {
     display: block;
     font-size: 24px;
     line-height: 140%;
 }
-.main-item .info-price select{
+
+.main-item .info-price select {
     display: block;
     padding: 10px 20px;
     background-color: #E5DF30;
     border-radius: 0%;
-    font-family:'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: 24px;
 }
-.main-item .info-price .buttons{
+
+.main-item .info-price .buttons {
     display: flex;
+    gap: 24px;
 }
-.main-item .info-price .buttons button{
+
+.main-item .info-price .buttons button {
     padding: 16px 40px;
-    font-family:'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: 24px;
     cursor: pointer;
 }
-.main-item .info-price .addcart{
+
+.main-item .info-price .addcart {
     background-color: #FBC528;
-    margin-right: 20px;
 }
-.main-item .info-price .buy{
+
+.main-item .info-price .buy {
     background-color: #00e509;
 }
 
 /* item-intro---------------------------------------------- */
 
-.main-item .item-intro{
+.main-item .item-intro {
     margin: 80px;
-    font-family:'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
-.main-item .item-intro h2{
+.main-item .detail-intro{
+    display: none;
+}
+
+.main-item .item-intro h2 {
     text-align: center;
     font-size: 36px;
     line-height: 140%;
     padding-bottom: 24px;
 }
-.main-item .item-intro p{
+
+.main-item .item-intro p {
     font-size: 24px;
     line-height: 160%;
 }
 
 /* recommand--------------------------------------------- */
-.recommand{
+.recommand {
     max-width: 1400px;
 }
-.recommand .recommand-title{
+
+.recommand .recommand-title {
     width: 70%;
     height: 40px;
     margin: 80px auto;
@@ -125,7 +148,8 @@ html,body{
     color: #000;
     position: relative;
 }
-.recommand .recommand-title::before{
+
+.recommand .recommand-title::before {
     content: "";
     position: absolute;
     border-top: 20px solid #009b056b;
@@ -133,7 +157,8 @@ html,body{
     top: 100%;
     right: 0%;
 }
-.recommand .recommand-title::after{
+
+.recommand .recommand-title::after {
     content: "";
     position: absolute;
     border-top: 20px solid #009b056b;
@@ -142,13 +167,14 @@ html,body{
     left: 0%;
 }
 
-.recommand .items{
+.recommand .items {
     max-width: 1400px;
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
-.recommand .items .card{
+
+.recommand .items .card {
     width: 25%;
     display: flex;
     flex-flow: column;
@@ -159,84 +185,272 @@ html,body{
     clip-path: polygon(90% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
     color: #000;
 }
-.recommand .items .card img{
+
+.recommand .items .card img {
     width: 100%;
     aspect-ratio: 200 / 170;
 }
-.recommand .items .card h2{
+
+.recommand .items .card h2 {
     display: block;
     width: 100%;
     margin: 10px 0;
     font-size: 24px;
     font-weight: bold;
 }
-.recommand .items .card p{
+
+.recommand .items .card p {
     display: block;
     width: 100%;
     text-align: left;
     font-size: 18px;
     line-height: 140%;
 }
-.recommand .items .card span{
+
+.recommand .items .card span {
     font-size: 24px;
-    align-self: flex-end;
+    align-self: center;
+    margin-top: 16px;
 }
-.recommand .items .card .icon-cart{
+
+.recommand .items .card .icon-cart {
     position: absolute;
-    right: 24px;
-    top: 60%;
+    right: 3%;
+    bottom: 3%;
     width: 30px;
     height: 30px;
 }
-.recommand .items .card .icon-cart img{
+
+.recommand .items .card .icon-cart img {
     width: 100%;
 }
-.big-cart{
+
+.big-cart {
+    scale: 0.6;
     position: fixed;
     bottom: 8px;
     right: 8px;
 }
-.cart{
+
+.cart {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     right: 40px;
 }
+
 @media (max-width:960px) {
-    .main-item .container{
+    .main-item .container {
         padding: 40px;
     }
-    .main-item .info-price{
+
+    .main-item .info-price {
         padding-left: 24px;
     }
-    .main-item .info-price h1{
+
+    .main-item .info-price h1 {
         font-size: 32px;
     }
-    .main-item .info-price h2{
+
+    .main-item .info-price h2 {
         font-size: 24px;
     }
-    .main-item .info-price p{
+
+    .main-item .info-price p {
         font-size: 20px;
     }
-    .main-item .info-price select{
+
+    .main-item .info-price select {
         padding: 10px 20px;
         font-size: 20px;
     }
-    .main-item .info-price .buttons button{
+
+    .main-item .info-price .buttons button {
         padding: 10px 20px;
         font-size: 20px;
     }
-    .main-item .item-intro{
+
+    .main-item .item-intro {
         width: 90%;
         margin: auto;
         margin-top: 80px;
     }
-    .main-item .item-intro h2{
+
+    .main-item .item-intro h2 {
         font-size: 32px;
     }
-    .main-item .item-intro p{
+
+    .main-item .item-intro p {
         font-size: 20px;
-    }  
+    } 
+    .recommand .items {
+        max-width: 1400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+        overflow: hidden;
+    }
+    .recommand .items .card {
+        width:25%;
+    }
 }
+
 @media (max-width:768px) {
+    .main-item .container {
+        padding: 24px;
+    }
+    .main-item .container .item-info {
+        flex-flow: column;
+        gap: 24px;
+    }
     
+    .main-item .item-info .imgs {
+        width: 100%;
+    }
+    
+    .main-item .item-info .imgs .bigpic img {
+        width: 100%;
+    }
+    
+    .main-item .item-info .imgs .smallpic {
+        display: none;
+    }
+
+    .main-item .info-price {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .main-item .info-price h1 {
+        font-size: 32px;
+    }
+    
+    .main-item .info-price h2 {
+        font-size: 32px;
+    }
+    
+    .main-item .info-price p {
+        font-size: 20px;
+    }
+    
+    .main-item .info-price select {
+        display: none;
+    }
+    
+    .main-item .info-price .buttons {
+        width: 100%;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        background-color: #191A24;
+    }
+    
+    .main-item .info-price .buttons button {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .main-item .info-price .addcart {
+        background-color: transparent;
+        border: 2px solid #00e509;
+        color: #fff;
+    }
+    
+    .main-item .info-price .buy {
+        background-color: #00e509;
+        border: 2px solid #00e509;
+    }
+
+    /* .item-intro------------------------------ */
+    .main-item .item-intro {
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .item-intro .detail-intro {
+        display: block;
+        width: 70%;
+        margin: 40px auto;
+        background-color: #FBC528;
+    
+        text-align: center;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000;
+        position: relative;
+    }
+    
+    .item-intro .detail-intro::before {
+        content: "";
+        position: absolute;
+        border-top: 20px solid #493806;
+        border-right: 50px solid transparent;
+        top: 100%;
+        right: 0%;
+    }
+    
+    .item-intro .detail-intro::after {
+        content: "";
+        position: absolute;
+        border-top: 20px solid #493806;
+        border-left: 50px solid transparent;
+        top: 100%;
+        left: 0%;
+    }
+
+    .main-item .item-intro h2 {
+        font-size: 24px;
+    }
+
+    .main-item .item-intro p {
+        font-size: 20px;
+    } 
+    .recommand .items {
+        max-width: 1400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+        overflow: hidden;
+    }
+    .recommand .items .card {
+        width:25%;
+    }
+
+/* .recommand--------------------------------------------- */
+
+    .recommand .recommand-title {
+        margin: 40px auto;
+    }
+
+    .recommand .items {
+        max-width: 1400px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    
+    .recommand .items .card {
+        width: 80%;
+    }
+    
+    .recommand .items .card img {
+        width: 100%;
+        aspect-ratio: 200 / 130;
+    }
+    .big-cart {
+        scale: 0.5;
+        bottom: 5%;
+        right: -5%;
+    }
+    
+    .cart {
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+    }
 }
