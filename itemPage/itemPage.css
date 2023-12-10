@@ -4,29 +4,6 @@ html,body{
     background-color: #000;
 }
 
-/* banner---------------------------------- */
-
-.banner {
-    padding-top: 120px;
-    width: 100%;
-    height: 284px;
-    position: relative;
-    overflow: hidden;
-}
-
-@media (max-width:1400px) {
-    .banner {
-        padding-top: 80px;
-        height: 240px;
-    }
-}
-
-.banner img {
-    width: 100%;
-    aspect-ratio: 4096 / 2575;
-    /* height: 100%; */
-}
-
 /* .main-item-------------------------------------- */
 
 .main-item{
@@ -49,6 +26,9 @@ html,body{
 }
 .main-item .item-info .imgs{
     width: 50%;
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
 }
 .main-item .item-info .imgs .bigpic img{
     width: 100%;
@@ -58,7 +38,6 @@ html,body{
     display: flex;
     width: 100%;
     overflow: hidden;
-    padding-top: 24px;
 }
 .main-item .item-info .smallpic img{
     width: 33.33333%;
@@ -69,6 +48,11 @@ html,body{
 }
 .main-item .info-price{
     width: 50%;
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
     padding-left: 80px;
     position: relative;
 }
@@ -77,11 +61,9 @@ html,body{
 }
 .main-item .info-price h2{
     font-size: 36px;
-    padding: 32px 0;
 }
 .main-item .info-price p{
     display: block;
-    padding: 32px 0;
     font-size: 24px;
     line-height: 140%;
 }
@@ -89,6 +71,7 @@ html,body{
     display: block;
     padding: 10px 20px;
     background-color: #E5DF30;
+    border-radius: 0%;
     font-family:'Noto Sans TC', sans-serif;
     font-size: 24px;
 }
@@ -96,7 +79,6 @@ html,body{
     display: flex;
 }
 .main-item .info-price .buttons button{
-    margin-top: 40px;
     padding: 16px 40px;
     font-family:'Noto Sans TC', sans-serif;
     font-size: 24px;
@@ -110,15 +92,6 @@ html,body{
     background-color: #00e509;
 }
 
-/* ---------------------------後增加覆寫!!! */
-.main-item .info-price{
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 80px;
-}
 /* item-intro---------------------------------------------- */
 
 .main-item .item-intro{
@@ -139,26 +112,41 @@ html,body{
 /* recommand--------------------------------------------- */
 .recommand{
     max-width: 1400px;
-    margin: 80px;
-
 }
 .recommand .recommand-title{
-    width: 100%;
-    height: 50px;
+    width: 70%;
+    height: 40px;
     margin: 80px auto;
     background-color: #00e509;
 
     text-align: center;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 40px;
     color: #000;
+    position: relative;
+}
+.recommand .recommand-title::before{
+    content: "";
+    position: absolute;
+    border-top: 20px solid #009b056b;
+    border-right: 50px solid transparent;
+    top: 100%;
+    right: 0%;
+}
+.recommand .recommand-title::after{
+    content: "";
+    position: absolute;
+    border-top: 20px solid #009b056b;
+    border-left: 50px solid transparent;
+    top: 100%;
+    left: 0%;
 }
 
 .recommand .items{
     max-width: 1400px;
-    margin: 0 -12px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 24px;
 }
 .recommand .items .card{
     width: 25%;
@@ -166,10 +154,9 @@ html,body{
     flex-flow: column;
     position: relative;
     background-color: #FBC528;
-    margin: 0 12px;
-    padding: 48px 20px 8px 20px;
-    -webkit-clip-path: polygon(85% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
-    clip-path: polygon(85% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+    padding: 20px;
+    -webkit-clip-path: polygon(90% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
     color: #000;
 }
 .recommand .items .card img{
@@ -195,10 +182,9 @@ html,body{
     align-self: flex-end;
 }
 .recommand .items .card .icon-cart{
-    /* margin-top: 40px; */
     position: absolute;
     right: 24px;
-    top: 70%;
+    top: 60%;
     width: 30px;
     height: 30px;
 }
@@ -214,4 +200,43 @@ html,body{
     position: absolute;
     bottom:0;
     right: 40px;
+}
+@media (max-width:960px) {
+    .main-item .container{
+        padding: 40px;
+    }
+    .main-item .info-price{
+        padding-left: 24px;
+    }
+    .main-item .info-price h1{
+        font-size: 32px;
+    }
+    .main-item .info-price h2{
+        font-size: 24px;
+    }
+    .main-item .info-price p{
+        font-size: 20px;
+    }
+    .main-item .info-price select{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .main-item .info-price .buttons button{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .main-item .item-intro{
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .main-item .item-intro h2{
+        font-size: 32px;
+    }
+    .main-item .item-intro p{
+        font-size: 20px;
+    }  
+}
+@media (max-width:768px) {
+    
 }

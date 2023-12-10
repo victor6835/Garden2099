@@ -246,7 +246,7 @@ html {
     flex-flow: column;
 }
 
-.picinfo .topbar {
+.picinfo .topbar-options {
     justify-content: center;
     display: flex;
     margin-bottom: 40px;
@@ -352,7 +352,7 @@ html {
     }
 }
 
-@media (max-width:414px) {
+@media (max-width:768px) {
     .picinfo .container {
         max-width: 1400px;
         height: 100%;

@@ -4,28 +4,6 @@ html, body{
     background-color: #000;
 }
 
-/* banner---------------------------------- */
-
-.banner {
-    padding-top: 120px;
-    width: 100%;
-    height: 284px;
-    position: relative;
-    overflow: hidden;
-}
-
-@media (max-width:1400px) {
-    .banner {
-        padding-top: 80px;
-        height: 240px;
-    }
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-}
-
 /* main-onlineShop----------------------------------- */
 
 .main-onlineShop{
@@ -74,6 +52,9 @@ html, body{
 .main-onlineShop .container .topbar a:hover {
     background-color: #00e509;
 }
+.main-onlineShop .topbar-phone{
+    display: none;
+}
 
 /* .onlineShop-shop-list-------------------------------------------- */
 
@@ -94,7 +75,7 @@ html, body{
     font-family:'Noto Sans TC', sans-serif;
     text-decoration: none;
     position: relative;
-    padding: 40px;
+    padding: 30px;
 }
 .main-onlineShop .shop-list .card .item-pic{
     width: 100%;
@@ -104,7 +85,7 @@ html, body{
     display: block;
     margin: 20px 0;
     text-align: left;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 .main-onlineShop .shop-list .card p{
@@ -116,7 +97,7 @@ html, body{
     position: absolute;
     right: 32px;
     bottom: 16px;
-    font-size: 32px;
+    font-size: 24px;
 }
 .main-onlineShop .shop-list .icon-cart{
     /* margin-top: 40px; */
@@ -137,7 +118,7 @@ html, body{
 .main-onlineShop .shop-list .page-move a{
     display: inline-block;
     vertical-align: middle;
-    padding: 20px;
+    padding: 8px;
     color: #E5DF30;
     text-decoration: none;
     font-size: 32px;
@@ -158,4 +139,61 @@ html, body{
     scale: .8;
     bottom: 24px;
     right: 24px;
+}
+@media (max-width:960px) {
+    .main-onlineShop .container{
+        padding: 24px;
+    }
+    .main-onlineShop .topbar{
+        margin-bottom: 24px;
+    }
+}
+@media (max-width:768px) {
+    .main-onlineShop .container .shop-list{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .main-onlineShop .shop-list .page-move{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media (max-width:414px) {
+    .main-onlineShop .container .shop-list{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .main-onlineShop .shop-list .page-move{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .main-onlineShop .topbar{
+        display: none;
+    }
+    .main-onlineShop .topbar-phone {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+    .main-onlineShop .topbar-phone p{
+        width: 100%;
+        height: 100%;
+        line-height: 48px;
+        display: flex;
+        display: inline-block;
+        font-size: 24px;
+        text-decoration: none;
+        text-align: center;
+        color: #000;
+        background-color: #E5DF30;
+    }
+    .main-onlineShop .container .topbar a {
+        width: 100%;
+        background-color: #000;
+    }
+
+    .main-onlineShop .topbar-phone img{
+        height: 100%;
+        width: 72px;
+    }
 }
