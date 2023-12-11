@@ -92,20 +92,19 @@ html, body{
     text-align: left;
     font-size: 18px;
     line-height: 140%;
+    padding-bottom: 16px;
 }
 .main-onlineShop .shop-list .card span{
     position: absolute;
-    right: 32px;
-    bottom: 16px;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 24px;
 }
 .main-onlineShop .shop-list .icon-cart{
-    /* margin-top: 40px; */
     position: absolute;
-    right: 40px;
-    bottom: 110px;
-    width: 30px;
-    height: 40px;
+    right: 5%;
+    bottom: 4%;
 }
 .main-onlineShop .shop-list .icon-cart img{
     width: 100%;
@@ -136,9 +135,9 @@ html, body{
 }
 .big-cart{
     position: fixed;
-    scale: .8;
-    bottom: 24px;
-    right: 24px;
+    scale: .5;
+    bottom: 0%;
+    right: 0%;
 }
 @media (max-width:960px) {
     .main-onlineShop .container{

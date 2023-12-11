@@ -9,10 +9,12 @@
 <link rel="stylesheet" href="../reset.css">
 <link rel="stylesheet" href="/Garden2099//cart/cart.css">
 <link rel="stylesheet" href="/Garden2099/header/headerRWD.css">
+<link rel="stylesheet" href="/Garden2099/banner/banner.css">
 <link rel="stylesheet" href="/Garden2099/footer/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a490b792ba.js" crossorigin="anonymous"></script>
 
 
 <body>
@@ -26,43 +28,69 @@
             <a href="/Garden2099/index.html" class="logo"><img
                     src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ffinal%20logo.png?alt=media&token=24013b5c-9765-4324-8f5e-a45a3a49cc3d"
                     alt=""></a>
+<!-- Hamburger---------------------------------------- -->
+            <a href="#overlay" class="menu-toggle">
+                <span></span><span></span><span></span>
+            </a>
+            <div id="overlay" class="nav_popup">
+                <a class="options" href="/Garden2099/aboutUs/aboutus.html">關於我們</a>
+                <a class="options" href="/Garden2099/index.html#news">最新消息</a>
+                <a class="options" href="/Garden2099/menu/menu.html">菜單</a>
+                <a class="options" href="/Garden2099/onlineShop/onlineShop.html">線上購物</a>
+                <a class="options" href="/Garden2099/index.html#position">位置資訊</a>
+                <a class="options" href="/Garden2099/online-reserve/online-reserve.html">馬上訂位</a>
+                <div class="icons">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon_ig.svg?alt=media&token=3fc794a2-ce3c-4699-a80a-34032a29709b"
+                        alt="">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon%3Dfb.svg?alt=media&token=9bd58226-c395-420f-901e-434335f49cb9"
+                        alt="">
+                </div>
+                <a href="#!" class="popup-close">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>   
+<!-- Hamburger-end--------------------- -->
             <nav class="right">
                 <a class="shop" href="/Garden2099/onlineShop/onlineShop.html">線上購物</a>
                 <a class="position" href="/Garden2099/index.html#position">位置資訊</a>
                 <a class="order" href="/Garden2099/online-reserve/online-reserve.html">馬上訂位▼</a>
             </nav>
         </div>
-        
     </header>
  
     <div class="banner">
-        <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fbanner-cart.png?alt=media&token=499563bc-fd60-4fe2-8b84-6e3e8405a6cb" alt="" class="outside">
+        <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fshop%20banner%20(1).jpg?alt=media&token=ddb318b5-fd02-477b-bab0-9c1e46b15bee"
+            alt="" class="outside">
+        <div class="banner-text">
+            <h1>Cart</h1>
+        </div>      
     </div>
 
     <section class="main-cart">
         <div class="container">
             <div class="cart-list">
-                <table>
+                <table class="cart-table">
                     <tr>
                         <th></th>
                         <th>產品名稱</th>
-                        <th>單價</th>
+                        <th class="single-price">單價</th>
                         <th>數量</th>
-                        <th>總共</th>
-                        <th></th>
+                        <th class="total">總共</th>
+                        <th class="delete"></th>
                     </tr>
                     <tr>
                         <td><img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fimg.png?alt=media&token=108f4127-0a2e-4924-a0d4-5868ead69d61" alt=""></td>
                         <td>水耕蘿蔓</td>
                         <td>$120</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fback.svg?alt=media&token=749f69c1-9bb1-4cca-83a5-f2b62f8124e0" alt="">
+                            <i class="fa-solid fa-minus"></i>
                             <span>2</span>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fnext.svg?alt=media&token=8b12c66f-f9c6-4534-a35b-bc38597c7dae" alt="">
+                            <i class="fa-solid fa-plus"></i>
                         </td>
                         <td>$240</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fcancel.svg?alt=media&token=79c5be18-3dcc-40bc-b79c-2656d9aec8a5" alt="">
+                            <i class="fa-solid fa-xmark"></i>
                         </td>
                     </tr>
                     <tr>
@@ -70,13 +98,13 @@
                         <td>結球萵苣</td>
                         <td>$120</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fback.svg?alt=media&token=749f69c1-9bb1-4cca-83a5-f2b62f8124e0" alt="">
+                            <i class="fa-solid fa-minus"></i>
                             <span>2</span>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fnext.svg?alt=media&token=8b12c66f-f9c6-4534-a35b-bc38597c7dae" alt="">
+                            <i class="fa-solid fa-plus"></i>
                         </td>
                         <td>$240</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fcancel.svg?alt=media&token=79c5be18-3dcc-40bc-b79c-2656d9aec8a5" alt="">
+                            <i class="fa-solid fa-xmark"></i>
                         </td>
                     </tr>
                     <tr>
@@ -84,13 +112,13 @@
                         <td>水耕萵苣</td>
                         <td>$120</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fback.svg?alt=media&token=749f69c1-9bb1-4cca-83a5-f2b62f8124e0" alt="">
+                            <i class="fa-solid fa-minus"></i>
                             <span>2</span>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fnext.svg?alt=media&token=8b12c66f-f9c6-4534-a35b-bc38597c7dae" alt="">
+                            <i class="fa-solid fa-plus"></i>
                         </td>
                         <td>$240</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fcancel.svg?alt=media&token=79c5be18-3dcc-40bc-b79c-2656d9aec8a5" alt="">
+                            <i class="fa-solid fa-xmark"></i>
                         </td>
                     </tr>
                     <tr>
@@ -98,13 +126,13 @@
                         <td>營養起司</td>
                         <td>$120</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fback.svg?alt=media&token=749f69c1-9bb1-4cca-83a5-f2b62f8124e0" alt="">
+                            <i class="fa-solid fa-minus"></i>
                             <span>2</span>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fnext.svg?alt=media&token=8b12c66f-f9c6-4534-a35b-bc38597c7dae" alt="">
+                            <i class="fa-solid fa-plus"></i>
                         </td>
                         <td>$240</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fcancel.svg?alt=media&token=79c5be18-3dcc-40bc-b79c-2656d9aec8a5" alt="">
+                            <i class="fa-solid fa-xmark"></i>
                         </td>
                     </tr>
                     <tr>
@@ -112,13 +140,13 @@
                         <td>科技番茄</td>
                         <td>$120</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fback.svg?alt=media&token=749f69c1-9bb1-4cca-83a5-f2b62f8124e0" alt="">
+                            <i class="fa-solid fa-minus"></i>
                             <span>2</span>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fnext.svg?alt=media&token=8b12c66f-f9c6-4534-a35b-bc38597c7dae" alt="">
+                            <i class="fa-solid fa-plus"></i>
                         </td>
                         <td>$240</td>
                         <td>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fcancel.svg?alt=media&token=79c5be18-3dcc-40bc-b79c-2656d9aec8a5" alt="">
+                            <i class="fa-solid fa-xmark"></i>
                         </td>
                     </tr>
                 </table>
