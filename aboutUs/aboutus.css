@@ -120,6 +120,11 @@ body,html{
     margin-bottom: 40px;
     border-bottom: 2px solid #000;
 }
+.contactus .container .tele-mail{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
 .contactus .contact-info a{
     display: flex;
     justify-content: center;
@@ -161,7 +166,7 @@ body,html{
     margin-top: 40px;
     background-color: #000;
     color: #fff;
- 
+
 }
 @media (max-width:768px) {
     .contactus .container{
