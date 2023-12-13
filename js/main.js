@@ -17,5 +17,24 @@ for (let topbarLink of topbarLinks) {
     }
 }
 
+// menu----------------------------------------------------
+// .main-menu .container .menu-list------------------------
+
+let menuSideLists = document.querySelectorAll(".side-list");
+for (let menuSideList of menuSideLists) {
+    menuSideList.onclick = function (event) {
+        event.preventDefault();
+        let href = this.getAttribute("href");
+        if (href.startsWith("#")) {
+            let targetId = href.substring(1);
+
+            document.querySelector(".side-list.active").classList.remove("active");
+            document.querySelector(".menu-list.active").classList.remove("active");
+            this.classList.add("active");
+
+            document.getElementById(targetId).classList.add("active")
+        }
+    }
+}
 
 

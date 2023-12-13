@@ -45,10 +45,10 @@ html {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 18px bold;
     line-height: 140%;
+    padding: 8px;
 }
-
-.main-menu .sidebar .word-logo:hover {
-    background-color: transparent;
+.main-menu .sidebar a:hover {
+    border: 2px solid #fff;
 }
 
 .main-menu .sidebar h2 {
@@ -61,7 +61,11 @@ html {
 }
 /* ----------- */
 
-.main-menu .container .menu-list {
+/* menu-list---------------------------------------------------------- */
+.main-menu .container .menu-list{
+    display: none;
+}
+.main-menu .container .menu-list.active {
     width: 80%;
     height: 100%;
     display: grid;
@@ -81,9 +85,17 @@ html {
     position: relative;
 }
 
-.main-menu .menu-list .card img {
+.main-menu .menu-list .card .package {
     width: 100%;
     aspect-ratio: 338 / 240;
+}
+
+.main-menu .menu-list .card .fa-fire {
+    position: absolute;
+    font-size: 32px;
+    color: black;
+    top: 3px;
+    left: 3px;
 }
 
 .main-menu .menu-list .card h2 {
@@ -132,7 +144,7 @@ html {
         display: flex;
     }
 
-    .main-menu .container .menu-list {
+    .main-menu .container .menu-list.active {
         width: 80%;
         height: 100%;
         display: grid;
@@ -158,7 +170,7 @@ html {
     .main-menu .container .sidebar {
         display: none;
     }
-    .main-menu .container .menu-list {
+    .main-menu .container .menu-list.active {
         width: 100%;
         height: 100%;
         display: flex;
