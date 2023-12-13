@@ -278,12 +278,22 @@ html {
     color: #fff;
     background-color: #191A24;
 }
-
-.picinfo .shopintro {
+.picinfo .container .topbar-link.active {
+    background-color:  #00e509;
+    color: #000;
+    animation: fadeIn 800ms;
+}
+.picinfo .shopintro{
+    display: none;
+}
+.picinfo .shopintro.active {
     width: 100%;
     height: 100%;
     display: flex;
     gap: 80px;
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
 }
 
 .picinfo .shopintro .left-big {

@@ -47,10 +47,6 @@ html {
     line-height: 140%;
 }
 
-.main-menu .sidebar a:hover {
-    background-color: #6acd6d;
-}
-
 .main-menu .sidebar .word-logo:hover {
     background-color: transparent;
 }
