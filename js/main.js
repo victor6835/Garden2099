@@ -1,4 +1,5 @@
 // index-------------------------------------------------------
+
 // picinfo>topbar
 let topbarLinks = document.querySelectorAll(".topbar-link");
 for (let topbarLink of topbarLinks) {
@@ -16,6 +17,26 @@ for (let topbarLink of topbarLinks) {
         }
     }
 }
+
+//picinfo>left-big & smallpic
+let smallIntros = document.querySelectorAll(".smallpics");
+
+for (let smallIntro of smallIntros) {
+    smallIntro.onclick = e => {
+        e.preventDefault();
+        let src = e.target.getAttribute("src");
+
+        // 使用querySelectorAll選擇所有匹配的元素
+        let leftBigImgs = document.querySelectorAll(".left-big-img");
+        
+        // 遍歷NodeList，為每個元素設置src屬性
+        leftBigImgs.forEach(leftBigImg => {
+            leftBigImg.setAttribute("src", src);
+        });
+    }
+}
+
+
 
 // menu----------------------------------------------------
 // .main-menu .container .menu-list------------------------
@@ -40,11 +61,11 @@ for (let menuSideList of menuSideLists) {
 // onlineShop-------------------------------------------
 //.main-onlineShop .shop-list---------------------------------
 let onlineTopbars = document.querySelectorAll(".online-topbar");
-for(let onlineTopbar of onlineTopbars){
-    onlineTopbar.onclick = function(event){
+for (let onlineTopbar of onlineTopbars) {
+    onlineTopbar.onclick = function (event) {
         event.preventDefault();
         let href = this.getAttribute("href");
-        if(href.startsWith("#")){
+        if (href.startsWith("#")) {
             let targetId = href.substring(1);
 
             document.querySelector(".online-topbar.active").classList.remove("active");
@@ -56,5 +77,24 @@ for(let onlineTopbar of onlineTopbars){
     }
 }
 
+// .main-onlineShop .shop-list .icon-cart-----------------------------------
+let iconCarts = document.querySelectorAll(".icon-cart");
+for(let iconCart of iconCarts){
+    iconCart.onclick = e =>{
+        alert("商品已加入購物車");
+        return false;
+    }
+}
+
+//itemPage
+
+let itemSmalls = document.querySelectorAll(".itemSmallPic");
+for(let itemSmall of itemSmalls){
+    itemSmall.onclick = e =>{
+        e.preventDefault()
+        let src = e.target.getAttribute("src");
+        document.getElementById("itemBigPic").setAttribute("src", src);
+    }
+}
 
 

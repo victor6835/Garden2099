@@ -83,7 +83,7 @@ html, body{
     font-family:'Noto Sans TC', sans-serif;
     text-decoration: none;
     position: relative;
-    padding: 30px;
+    padding: 36px;
 }
 .main-onlineShop .shop-list .card .item-pic{
     width: 100%;
@@ -118,6 +118,9 @@ html, body{
     width: 100%;
     scale: 1.2;
 }
+.main-onlineShop .shop-list .icon-cart:hover img{
+    scale: 1.6;
+}
 .main-onlineShop .shop-list .page-move{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -146,6 +149,8 @@ html, body{
     scale: .5;
     bottom: 0%;
     right: 0%;
+    border: 5px solid #fff;
+    border-radius: 50%;
 }
 @media (max-width:1400px){
     .main-onlineShop .container{

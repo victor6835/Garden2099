@@ -298,7 +298,6 @@ html {
 
 .picinfo .shopintro .left-big {
     width: 50%;
-    /* margin-right: 80px; */
 }
 
 .picinfo .shopintro .left-big img {
@@ -324,23 +323,17 @@ html {
     line-height: 140%;
 }
 
-.picinfo .shopintro .right-picinfo .smallpic {
-    display: flex;
-    flex-grow: 1;
-    align-items: end;
-}
-
-.picinfo .right-picinfo .smallpic {
+.picinfo .right-picinfo .right-smallpic {
     display: flex;
     justify-content: space-around;
-    overflow: hidden;
     gap: 12px;
 }
 
-.picinfo .right-picinfo .smallpic img {
+.picinfo .right-picinfo .right-smallpic img {
     max-width: 30%;
     display: inline-block;
     aspect-ratio: 1 / 1;
+    cursor: pointer;
 }
 
 @media (max-width:1400px) {
@@ -384,7 +377,7 @@ html {
         gap: 24px;
     }
 
-    .picinfo .shopintro .right-picinfo .smallpic {
+    .picinfo .shopintro .right-picinfo .right-smallpic {
         display: none;
     }
 
