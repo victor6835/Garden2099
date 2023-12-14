@@ -37,4 +37,24 @@ for (let menuSideList of menuSideLists) {
     }
 }
 
+// onlineShop-------------------------------------------
+//.main-onlineShop .shop-list---------------------------------
+let onlineTopbars = document.querySelectorAll(".online-topbar");
+for(let onlineTopbar of onlineTopbars){
+    onlineTopbar.onclick = function(event){
+        event.preventDefault();
+        let href = this.getAttribute("href");
+        if(href.startsWith("#")){
+            let targetId = href.substring(1);
+
+            document.querySelector(".online-topbar.active").classList.remove("active");
+            document.querySelector(".shop-list.active").classList.remove("active");
+            this.classList.add("active");
+
+            document.getElementById(targetId).classList.add("active")
+        }
+    }
+}
+
+
 

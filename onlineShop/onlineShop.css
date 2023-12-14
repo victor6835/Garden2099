@@ -26,11 +26,15 @@ html, body{
     display: flex;
     margin-bottom: 80px;
 }
+
 .main-onlineShop .topbar .online-topbar.active{
     background-color: #00e509;
     color: #000;
+    animation: fadeIn 800ms;
 }
-
+@keyframes fadeIn {
+    from{opacity: 0;}
+}
 .main-onlineShop .topbar .vegetable{
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 100%, 0 60%);

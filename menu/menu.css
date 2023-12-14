@@ -46,6 +46,7 @@ html {
     font-size: 18px bold;
     line-height: 140%;
     padding: 8px;
+    border: 2px solid transparent;
 }
 .main-menu .sidebar a:hover {
     border: 2px solid #fff;
