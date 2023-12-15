@@ -98,15 +98,41 @@ for (let itemSmall of itemSmalls) {
 }
 
 // cart
-// let btnMinus = document.querySelectorAll(".btnMinus");
-// for(let btnMinu of btnMinus){
-//     btnMinu.onclick = e =>{
+function updateQuantity(btnElement, change) {
+    const qtyInput = btnElement.parentNode.querySelector('.qty');
+    let currentQuantity = parseInt(qtyInput.value);
 
-//     }
-// }
-// let btnPlus = document.querySelectorAll(".btnPlus");
+    if (currentQuantity + change >= 0) {
+        currentQuantity += change;
+        qtyInput.value = currentQuantity;
+        updateTotal();
+    }
+}
+
+function removeProduct(btnElement) {
+    console.log(btnElement.parentNode.parentNode)
+    const qtyInput = btnElement.parentNode.parentNode.querySelector('.qty');
+    qtyInput.value = 0;
+    updateTotal();
+}
+
+function updateTotal() {
+    let total = 0;
+
+    document.querySelectorAll('.product').forEach((product) => {
+        const price = parseFloat(product.getAttribute('data-price'));
+        const quantity = parseInt(product.querySelector('.qty').value);
+        const itemTotal = price * quantity;
+        console.log(price);
+        total += itemTotal;
+    });
+
+    document.getElementById('totalAmount').textContent = total.toFixed(2);
+}
+
 
 //order-confirm(random-number)
+
 // 等待整個文檔都載入完畢
 document.addEventListener('DOMContentLoaded', function () {
     // 獲取顯示訂單編號的元素

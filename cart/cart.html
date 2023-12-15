@@ -79,79 +79,79 @@
                         <!-- <th class="total">總共</th> -->
                         <th class="delete">取消</th>
                     </tr>
-                    <tr>
+                    <tr class="product" data-price="50">
                         <td><img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fimg.png?alt=media&token=108f4127-0a2e-4924-a0d4-5868ead69d61"
                                 alt=""></td>
                         <td>水耕蘿蔓</td>
-                        <td>$120</td>
+                        <td id="price">$50</td>
                         <td class="btns">
-                            <input type="button" value="-" class="btnMinus">
+                            <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
                             <input type="text" size="3" value="0" class="qty">
-                            <input type="button" value="+" class="btnPlus">
+                            <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
                         </td>
                         <!-- <td>$240</td> -->
                         <td>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark" onclick="removeProduct(this)"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="product" data-price="120">
                         <td><img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fimg-1.png?alt=media&token=676baf97-8069-4f3c-8c5b-9c9bb5be3c51"
                                 alt=""></td>
                         <td>結球萵苣</td>
                         <td>$120</td>
                         <td>
-                            <input type="button" value="-" class="btnMinus">
+                            <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
                             <input type="text" size="3" value="0" class="qty">
-                            <input type="button" value="+" class="btnPlus">
+                            <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
                         </td>
                         <!-- <td>$240</td> -->
                         <td>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark" onclick="removeProduct(this)"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="product" data-price="120">
                         <td><img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fimg-2.png?alt=media&token=6679450e-6085-4816-b571-553e1db124b0"
                                 alt=""></td>
                         <td>水耕萵苣</td>
                         <td>$120</td>
                         <td>
-                            <input type="button" value="-" class="btnMinus">
+                            <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
                             <input type="text" size="3" value="0" class="qty">
-                            <input type="button" value="+" class="btnPlus">
+                            <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
                         </td>
                         <!-- <td>$240</td> -->
                         <td>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark" onclick="removeProduct(this)"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="product" data-price="100">
                         <td><img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fimg-3.png?alt=media&token=dc02e3db-cab7-4ee7-8f61-acff651ae074"
                                 alt=""></td>
                         <td>營養起司</td>
-                        <td>$120</td>
+                        <td>$100</td>
                         <td>
-                            <input type="button" value="-" class="btnMinus">
-                            <input type="text" size="2" value="0" class="qty">
-                            <input type="button" value="+" class="btnPlus">
+                            <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
+                            <input type="text" size="3" value="0" class="qty">
+                            <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
                         </td>
                         <!-- <td>$240</td> -->
                         <td>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark" onclick="removeProduct(this)"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="product" data-price="180">
                         <td><img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fimg-4.png?alt=media&token=c1fc24fd-35cf-4692-9945-66cc82bda409"
                                 alt=""></td>
                         <td>科技番茄</td>
-                        <td>$120</td>
+                        <td>$180</td>
                         <td>
-                            <input type="button" value="-" class="btnMinus">
+                            <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
                             <input type="text" size="3" value="0" class="qty">
-                            <input type="button" value="+" class="btnPlus">
+                            <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
                         </td>
                         <!-- <td>$240</td> -->
                         <td>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark" onclick="removeProduct(this)"></i>
                         </td>
                     </tr>
                 </table>
@@ -164,15 +164,15 @@
                         </tr>
                         <tr>
                             <td>商品總計:</td>
-                            <td>$8787</td>
+                            <td>$0</td>
                         </tr>
                         <tr>
                             <td>運費:</td>
-                            <td>$87</td>
+                            <td>$60</td>
                         </tr>
                         <tr>
                             <td class="total">合計:</td>
-                            <td class="total">$878787</td>
+                            <td class="total" id="totalAmount">$0</td>
                         </tr>
                     </table>
                 </div>
