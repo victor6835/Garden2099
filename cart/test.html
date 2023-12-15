@@ -39,7 +39,7 @@
             <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
             <input type="text" size="3" value="0" class="qty">
             <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
-            <button onclick="removeProduct(this)">歸零</button>
+            <button onclick="removeProduct(this)">移除</button>
         </div>
 
         <div class="product" data-price="80">
@@ -47,7 +47,7 @@
             <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
             <input type="text" size="3" value="0" class="qty">
             <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
-            <button onclick="removeProduct(this)">歸零</button>
+            <button onclick="removeProduct(this)">移除</button>
         </div>
 
         <div class="product" data-price="120">
@@ -55,7 +55,7 @@
             <input type="button" value="-" class="btnMinus" onclick="updateQuantity(this, -1)">
             <input type="text" size="3" value="0" class="qty">
             <input type="button" value="+" class="btnPlus" onclick="updateQuantity(this, 1)">
-            <button onclick="removeProduct(this)">歸零</button>
+            <button onclick="removeProduct(this)">移除</button>
         </div>
 
         <div class="total">
@@ -76,8 +76,8 @@
         }
 
         function removeProduct(btnElement) {
-            const qtyInput = btnElement.parentNode.querySelector('.qty');
-            qtyInput.value = 0;
+            const product = btnElement.parentNode;
+            product.parentNode.removeChild(product);
             updateTotal();
         }
 

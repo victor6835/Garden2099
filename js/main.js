@@ -125,9 +125,11 @@ function updateTotal() {
         const itemTotal = price * quantity;
         console.log(price);
         total += itemTotal;
+        resultTotal = total + 60;
     });
 
-    document.getElementById('totalAmount').textContent = total.toFixed(2);
+    document.getElementById('totalAmount').textContent = "$" + total.toFixed(2);
+    document.getElementById('totalAmountResult').textContent = "$" + resultTotal.toFixed(2);
 }
 
 
