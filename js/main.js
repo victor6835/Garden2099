@@ -99,19 +99,27 @@ for (let itemSmall of itemSmalls) {
 
 // cart
 function updateQuantity(btnElement, change) {
+    // console.log(btnElement);
+    // console.log(btnElement.parentNode);
     const qtyInput = btnElement.parentNode.querySelector('.qty');
+    // console.log(qtyInput);
+    // console.log(qtyInput.value);
     let currentQuantity = parseInt(qtyInput.value);
-
+    // 初始:0 下一個:1  
     if (currentQuantity + change >= 0) {
         currentQuantity += change;
+        
         qtyInput.value = currentQuantity;
         updateTotal();
     }
 }
 
 function removeProduct(btnElement) {
-    console.log(btnElement.parentNode.parentNode)
+    console.log(btnElement);
+    // console.log(btnElement);
+    // console.log(btnElement.parentNode.parentNode)
     const qtyInput = btnElement.parentNode.parentNode.querySelector('.qty');
+    console.log(qtyInput)
     qtyInput.value = 0;
     updateTotal();
 }
@@ -120,11 +128,13 @@ function updateTotal() {
     let total = 0;
 
     document.querySelectorAll('.product').forEach((product) => {
+        // console.log(document.querySelectorAll('.product'));
+        // console.log(product);
         const price = parseFloat(product.getAttribute('data-price'));
         const quantity = parseInt(product.querySelector('.qty').value);
         const itemTotal = price * quantity;
-        console.log(price);
-        total += itemTotal;
+        // console.log(price);
+        total += itemTotal; // 總金額不包含運費
         if(quantity > 0){
             resultTotal = total + 60;
         }else{
