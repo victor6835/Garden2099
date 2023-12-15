@@ -183,19 +183,16 @@ body {
     .main-cart .cart-list .total {
         width: 2%;
     }
-    
     .main-cart .cart-list .cart-table {
         .btnMinus {
-            text-align: center;
-            line-height: 20px;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             font-size: 16px;
     
         }
         .btnPlus {
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             font-size: 16px;
         }
         .qty{
@@ -216,6 +213,7 @@ body {
         border: 2px solid red;
         background-color: red;
         border-radius: 50%;
+        scale: .8;
     }
 
     .main-cart .cart-list .cart-table td {

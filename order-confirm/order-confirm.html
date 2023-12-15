@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../reset.css">
 <link rel="stylesheet" href="order-confirm.css">
 <link rel="stylesheet" href="/Garden2099/header/headerRWD.css">
+<link rel="stylesheet" href="/Garden2099/banner/banner.css">
 <link rel="stylesheet" href="/Garden2099/footer/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,17 +27,43 @@
             <a href="/Garden2099/index.html" class="logo"><img
                     src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ffinal%20logo.png?alt=media&token=24013b5c-9765-4324-8f5e-a45a3a49cc3d"
                     alt=""></a>
+            <!-- Hamburger---------------------------------------- -->
+            <a href="#overlay" class="menu-toggle">
+                <span></span><span></span><span></span>
+            </a>
+            <div id="overlay" class="nav_popup">
+                <a class="options" href="/Garden2099/aboutUs/aboutus.html">關於我們</a>
+                <a class="options" href="/Garden2099/index.html#news">最新消息</a>
+                <a class="options" href="/Garden2099/menu/menu.html">菜單</a>
+                <a class="options" href="/Garden2099/onlineShop/onlineShop.html">線上購物</a>
+                <a class="options" href="/Garden2099/index.html#position">位置資訊</a>
+                <a class="options" href="/Garden2099/online-reserve/online-reserve.html">馬上訂位</a>
+                <div class="icons">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon_ig.svg?alt=media&token=3fc794a2-ce3c-4699-a80a-34032a29709b"
+                        alt="">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon%3Dfb.svg?alt=media&token=9bd58226-c395-420f-901e-434335f49cb9"
+                        alt="">
+                </div>
+                <a href="#!" class="popup-close">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <!-- Hamburger-end--------------------- -->
             <nav class="right">
                 <a class="shop" href="/Garden2099/onlineShop/onlineShop.html">線上購物</a>
                 <a class="position" href="/Garden2099/index.html#position">位置資訊</a>
                 <a class="order" href="/Garden2099/online-reserve/online-reserve.html">馬上訂位▼</a>
             </nav>
         </div>
-        
     </header>
  
     <div class="banner">
-        <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Forder-confirm%20banner.png?alt=media&token=0263955c-5af0-4408-9199-5db3a90faa14" alt="" class="outside">
+        <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fshop%20banner%20(1).jpg?alt=media&token=ddb318b5-fd02-477b-bab0-9c1e46b15bee"
+            alt="" class="outside">
+        <div class="banner-text">
+            <h1>Cart</h1>
+        </div>
     </div>
 
     </section>
@@ -44,7 +71,7 @@
         <div class="container">
             <section class="ordernumber">
                 <h2>感謝您的訂購</h2>
-                <h2>訂單編號: 1234567890-1</h2>
+                <h2>訂單編號: <span id="order-number">1234567890</span></h2>
                 <h2 class="order-detail">
                     您在Garden 2099的訂單已建立成功，以下是您的訂購明細。
                 </h2>
@@ -121,7 +148,9 @@
 <section class="main-footer">
     <div class="container">
         <a class="logo" href="#">
-            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ffinal%20logo.png?alt=media&token=24013b5c-9765-4324-8f5e-a45a3a49cc3d" alt="">
+            <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ffinal%20logo.png?alt=media&token=24013b5c-9765-4324-8f5e-a45a3a49cc3d"
+                alt="">
+        </a>
         <div class="footer-item nav">
             <nav class="col1">
                 <a href="#">加入會員</a>
@@ -135,13 +164,15 @@
             </nav>
         </div>
         <div class="footer-item">
-            <p class="opentime">營業時間<br>周一 ~ 周五 11:00~21:00 (周一公休)</p>                   
+            <p class="opentime">營業時間<br>周一 ~ 周五 11:00~21:00 (周一公休)</p>
         </div>
         <div class="footer-item follow">
             <h4>FOLLOW US</h4>
             <div class="icons">
-                <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon_ig.svg?alt=media&token=3fc794a2-ce3c-4699-a80a-34032a29709b" alt="">
-                <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon_fb.svg?alt=media&token=32191663-78de-4352-a0f2-a51063474ce8" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon_ig.svg?alt=media&token=3fc794a2-ce3c-4699-a80a-34032a29709b"
+                    alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ficon_fb.svg?alt=media&token=32191663-78de-4352-a0f2-a51063474ce8"
+                    alt="">
             </div>
         </div>
     </div>
@@ -165,5 +196,6 @@
         prevScrollPos = currentScrollPos;
     };
 </script>
+<script src="/Garden2099/js/main.js"></script>
 </body>
 </html>

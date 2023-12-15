@@ -28,7 +28,7 @@ for (let smallIntro of smallIntros) {
 
         // 使用querySelectorAll選擇所有匹配的元素
         let leftBigImgs = document.querySelectorAll(".left-big-img");
-        
+
         // 遍歷NodeList，為每個元素設置src屬性
         leftBigImgs.forEach(leftBigImg => {
             leftBigImg.setAttribute("src", src);
@@ -79,8 +79,8 @@ for (let onlineTopbar of onlineTopbars) {
 
 // .main-onlineShop .shop-list .icon-cart-----------------------------------
 let iconCarts = document.querySelectorAll(".icon-cart");
-for(let iconCart of iconCarts){
-    iconCart.onclick = e =>{
+for (let iconCart of iconCarts) {
+    iconCart.onclick = e => {
         alert("商品已加入購物車");
         return false;
     }
@@ -89,15 +89,15 @@ for(let iconCart of iconCarts){
 //itemPage
 
 let itemSmalls = document.querySelectorAll(".itemSmallPic");
-for(let itemSmall of itemSmalls){
-    itemSmall.onclick = e =>{
+for (let itemSmall of itemSmalls) {
+    itemSmall.onclick = e => {
         e.preventDefault()
         let src = e.target.getAttribute("src");
         document.getElementById("itemBigPic").setAttribute("src", src);
     }
 }
 
-//cart
+// cart
 // let btnMinus = document.querySelectorAll(".btnMinus");
 // for(let btnMinu of btnMinus){
 //     btnMinu.onclick = e =>{
@@ -106,5 +106,22 @@ for(let itemSmall of itemSmalls){
 // }
 // let btnPlus = document.querySelectorAll(".btnPlus");
 
+//order-confirm(random-number)
+// 等待整個文檔都載入完畢
+document.addEventListener('DOMContentLoaded', function () {
+    // 獲取顯示訂單編號的元素
+    let orderNumberElement = document.getElementById('order-number');
+    let randomOrderNumber = generateRandomOrderNumber();
+    // 將生成的訂單編號設置到元素中
+    orderNumberElement.textContent = randomOrderNumber;
+});
+
+// 生成隨機的十位數訂單編號的函數
+function generateRandomOrderNumber() {
+    // 生成一個介於 1000000000 到 9999999999 之間的隨機數
+    let randomNum = Math.floor(Math.random() * (9999999999 - 1000000000 + 1)) + 1000000000;
+    // 轉換為字符串，並返回前十位
+    return String(randomNum).substring(0, 10);
+}
 
 
