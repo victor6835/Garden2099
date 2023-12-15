@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #000;
@@ -58,18 +59,39 @@ html,body{
     /* border-bottom: 1px solid #dddddd; */
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
-.main-cart .cart-list img{
+
+.main-cart .cart-list img {
     width: 100%;
     aspect-ratio: 125 / 100;
 }
 
-.main-cart .cart-list .fa-solid {
-    margin: 0 8px;
-    padding: 4px 4px;
-    border: 2px solid #000000;
+.main-cart .cart-list .cart-table {
+    .btnMinus {
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid #00e509;
+        font-size: 24px;
+        text-align: center;
+
+    }
+    .btnPlus {
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid #00e509;
+        font-size: 24px;
+        text-align: center;
+    }
+    .qty{
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
-.main-cart .cart-list .fa-xmark{
+.main-cart .cart-list .fa-xmark {
     padding: 10px 13px;
     text-align: center;
     border: 2px solid red;
@@ -77,11 +99,12 @@ html,body{
     border-radius: 50%;
 }
 
-.main-cart .pay-info{
+.main-cart .pay-info {
     color: #ffffff;
     margin-top: 40px;
     margin-bottom: 80px;
 }
+
 .main-cart .pay-info table {
     padding: 16px;
     width: 30vw;
@@ -95,14 +118,17 @@ html,body{
     color: #000;
     vertical-align: middle;
 }
+
 .main-cart .pay-info td {
     line-height: 200%;
     text-align: center;
 }
-.main-cart .pay-info .total{
+
+.main-cart .pay-info .total {
     font-size: 32px;
 }
-.main-cart .sent button{
+
+.main-cart .sent button {
     display: inline-block;
     -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
@@ -112,59 +138,92 @@ html,body{
     cursor: pointer;
     font-size: 24px;
 }
+
 @media (max-width:960px) {
-.main-cart .container {
-    padding: 40px;
+    .main-cart .container {
+        padding: 40px;
+    }
+
+    .main-cart .cart-list table {
+        font-size: 20px;
+    }
+
+    .main-cart .pay-info {
+        color: #ffffff;
+        margin: 40px 0;
+    }
+
+    .main-cart .pay-info .total {
+        font-size: 28px;
+    }
 }
-.main-cart .cart-list table {
-    font-size: 20px;
-}
-.main-cart .pay-info{
-    color: #ffffff;
-    margin: 40px 0;  
-}
-.main-cart .pay-info .total{
-    font-size: 28px;
-}
-}
+
 @media (max-width:768px) {
     .main-cart .container {
-        padding:16px 8px;
+        padding: 16px 8px;
     }
+
     .main-cart .cart-list table {
         font-size: 16px;
     }
+
     .main-cart .cart-list th {
         width: 5%;
         line-height: 200%;
     }
+
     .main-cart .cart-list .single-price {
-        width:1%;
+        width: 1%;
     }
+
     .main-cart .cart-list .delete {
         width: 0.1%;
     }
+
     .main-cart .cart-list .total {
-        width:2%;
+        width: 2%;
+    }
+    
+    .main-cart .cart-list .cart-table {
+        .btnMinus {
+            text-align: center;
+            line-height: 20px;
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+    
+        }
+        .btnPlus {
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+        }
+        .qty{
+            text-align: center;
+            font-size: 16px;
+            width: 15px;
+        }
     }
     .main-cart .cart-list .fa-solid {
         margin: 0 4px;
         padding: 2px 2px;
         border: 1px solid #000000;
     }
-    
-    .main-cart .cart-list .fa-xmark{
+
+    .main-cart .cart-list .fa-xmark {
         padding: 5px 7px;
         text-align: center;
         border: 2px solid red;
         background-color: red;
         border-radius: 50%;
     }
+
     .main-cart .cart-list .cart-table td {
         padding-left: 4px;
         text-align: center;
         vertical-align: middle;
     }
+
     .main-cart .pay-info table {
         padding: 16px;
         width: 100%;
@@ -172,17 +231,20 @@ html,body{
         font-size: 16px;
         background-color: #191A24;
     }
+
     .main-cart .pay-info th {
         padding: 0px 8px;
         width: 100%;
         font-size: 24px;
     }
-    .main-cart .sent button{
+
+    .main-cart .sent button {
         padding: 8px 20px;
         font-size: 20px;
         color: #000;
     }
-    .main-cart .pay-info .total{
+
+    .main-cart .pay-info .total {
         font-size: 24px;
     }
 }

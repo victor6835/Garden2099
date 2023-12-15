@@ -97,4 +97,14 @@ for(let itemSmall of itemSmalls){
     }
 }
 
+//cart
+// let btnMinus = document.querySelectorAll(".btnMinus");
+// for(let btnMinu of btnMinus){
+//     btnMinu.onclick = e =>{
+
+//     }
+// }
+// let btnPlus = document.querySelectorAll(".btnPlus");
+
+
 
