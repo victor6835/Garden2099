@@ -125,7 +125,9 @@ function updateTotal() {
         const itemTotal = price * quantity;
         console.log(price);
         total += itemTotal;
-        resultTotal = total + 60;
+        if(price > 0){
+            resultTotal = total + 60;
+        }
     });
 
     document.getElementById('totalAmount').textContent = "$" + total.toFixed(2);
