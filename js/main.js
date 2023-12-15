@@ -97,7 +97,7 @@ for (let itemSmall of itemSmalls) {
     }
 }
 
-// cart
+// cart------------------------------------------------------------------------
 function updateQuantity(btnElement, change) {
     // console.log(btnElement);
     // console.log(btnElement.parentNode);
