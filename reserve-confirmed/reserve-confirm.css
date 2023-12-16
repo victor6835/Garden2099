@@ -1,29 +1,8 @@
-html,body{
+html,
+body {
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #000;
-}
-
-/* banner---------------------------------- */
-
-.banner {
-    padding-top: 120px;
-    width: 100%;
-    height: 284px;
-    position: relative;
-    overflow: hidden;
-}
-
-@media (max-width:1400px) {
-    .banner {
-        padding-top: 80px;
-        height: 240px;
-    }
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
 }
 
 /* .main-order-confirmed(名字同main-cart檔案---------------- */
@@ -47,27 +26,28 @@ html,body{
 
 /* ordernumber--------------------------- */
 
-.main-reserve .reserve-number{
+.main-reserve .reserve-number {
     display: flex;
     flex-flow: column;
     align-items: center;
 
     font-size: 48px;
 }
-.main-reserve .reserve-number h2{
+
+.main-reserve .reserve-number h2 {
     display: block;
     padding: 40px 0;
     color: #ffffff;
 }
-.main-reserve .reserve-number .reserve-detail{
+
+.main-reserve .reserve-number .reserve-detail {
     font-size: 36px;
 }
 
 .main-reserve .reserve-list {
-    width: 828px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
-    padding-top: 40px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
     display: flex;
     flex-flow: column;
@@ -77,12 +57,11 @@ html,body{
 .main-reserve .reserve-list table {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 24px;
-    width: 100%;
-    height: 540px;
+    width: 70%;
+    height: 100%;
     margin: auto;
     background-color: #FBC528;
     border: 5px solid #00e509;
-    ;
 }
 
 .main-reserve .reserve-list th {
@@ -104,7 +83,7 @@ html,body{
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.main-reserve .sent button{
+.main-reserve .sent button {
     display: inline-block;
     -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
@@ -115,4 +94,36 @@ html,body{
     cursor: pointer;
 
     font-size: 24px;
+}
+
+@media (max-width:960px) {
+    .main-reserve .container {
+        padding: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .main-reserve .container {
+        padding: 16px;
+    }
+
+    .main-reserve .reserve-number {
+        font-size: 32px;
+    }
+
+    .main-reserve .reserve-number .reserve-detail {
+        font-size: 24px;
+    }
+
+    .main-reserve .reserve-list table {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .main-reserve .sent button {
+        font-size: 20px;
+        padding: 16px 40px;
+        margin-bottom: 40px;
+    }
+
 }

@@ -4,28 +4,6 @@ html,body{
     background-color: #000;
 }
 
-/* banner---------------------------------- */
-
-.banner {
-    padding-top: 120px;
-    width: 100%;
-    height: 284px;
-    position: relative;
-    overflow: hidden;
-}
-
-@media (max-width:1400px) {
-    .banner {
-        padding-top: 80px;
-        height: 240px;
-    }
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-}
-
 /* main-cart------------------------------------------ */
 
 .main-online-reserve {
@@ -35,13 +13,13 @@ html,body{
 }
 
 .main-online-reserve .container {
+    margin: auto;
     box-sizing: border-box;
     display: flex;
     flex-flow: column;
     position: relative;
     max-width: 1400px;
     height: 100%;
-    margin: auto;
     padding: 0 80px 80px;
     background-color: #FBC528;
     font-family: 'Noto Sans TC', sans-serif;
@@ -59,10 +37,11 @@ html,body{
     color: #fff;
 }
 .main-online-reserve header h1{
+    width: 30%;
     font-size: 48px;
-    padding-right: 15%;
 }
 .main-online-reserve header small{
+    width: 70%;
     font-size: 24px;
     justify-self: center;
 }
@@ -77,8 +56,6 @@ html,body{
     margin: 40px;
 }
 .main-online-reserve .form .time{
-    width: 948px;
-    margin: 0 auto;
     display: block;
     text-align: center;
 }
@@ -87,9 +64,8 @@ html,body{
     font-size: 24px;
 }
 .main-online-reserve .form .date{
-    width: 800px;
     display: flex;
-    margin-left: 180px;
+    justify-content: center;
 }
 .main-online-reserve .form h5{
     text-align: center;
@@ -98,7 +74,9 @@ html,body{
 }
 .main-online-reserve .form .moment{
     display: flex;
-    margin: 80px 180px;
+    justify-content: center;
+    margin: 80px 0;
+    /* margin: 80px 180px; */
   
 }
 .main-online-reserve .form .moment input{
@@ -155,9 +133,6 @@ html,body{
     font-size: 24px;
     line-height: 160%;
 }
-
-
-
 .main-online-reserve button{
     display: inline-block;
     -webkit-clip-path: polygon(76% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
@@ -169,4 +144,22 @@ html,body{
     cursor: pointer;
 
     font-size: 24px;
+}
+@media (max-width:960px) {
+    .main-online-reserve .container{
+        padding: 0 24px 24px;
+    }
+    .main-online-reserve header h1{
+        font-size: 32px;
+    }
+    .main-online-reserve header small{
+        font-size: 20px;
+    }
+    .main-online-reserve .form h4{
+        font-size: 32px;
+    }
+    .main-online-reserve .form h5{
+        font-size: 24px;
+    }
+
 }
