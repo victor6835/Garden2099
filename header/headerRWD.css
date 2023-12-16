@@ -199,8 +199,8 @@
 
     .popup-close {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 15px;
+        right: 15px;
         width: 56px;
         height: 56px;
         display: inline-block;

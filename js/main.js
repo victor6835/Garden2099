@@ -36,10 +36,64 @@ for (let smallIntro of smallIntros) {
     }
 }
 
+//.picinfo .tobar-phone
+$(document).ready(function () {
+    // 檢查視窗寬度是否小於等於 768px
+    function checkWindowSize() {
+        if ($(window).width() <= 768) {
+            var shopCategories = ["外觀", "內部", "料理", "科技工廠"];
+            var shopIds = ["#outside-phone", "#inside-phone", "#dishes-phone", "#techLab-phone"];
+            var currentIndex = 0;
 
+            // 初始狀態，顯示 #outside-phone 的內容
+            $("#topbarText").text(shopCategories[currentIndex]);
+            $(".shopintro").hide();
+            $(shopIds[currentIndex]).show();
 
-// menu----------------------------------------------------
-// .main-menu .container .menu-list------------------------
+            $("#topbarNext").click(function () {
+                // 增加索引，如果必要，進行循環
+                currentIndex = (currentIndex + 1) % shopCategories.length;
+
+                // 更新店舖類別文字
+                $("#topbarText").text(shopCategories[currentIndex]);
+
+                // 隱藏所有的 shopintro，並顯示當前選中的 shopintro
+                $(".shopintro").hide();
+                $(shopIds[currentIndex]).show();
+
+                // 阻止默認的鏈接行為
+                return false;
+            });
+
+            $("#topbarLast").click(function () {
+                // 減少索引，如果必要，進行循環
+                currentIndex = (currentIndex - 1 + shopCategories.length) % shopCategories.length;
+
+                // 更新店舖類別文字
+                $("#topbarText").text(shopCategories[currentIndex]);
+
+                // 隱藏所有的 shopintro，並顯示當前選中的 shopintro
+                $(".shopintro").hide();
+                $(shopIds[currentIndex]).show();
+
+                // 阻止默認的鏈接行為
+                return false;
+            });
+        }
+    }
+
+    // 頁面加載時檢查一次視窗大小
+    checkWindowSize();
+
+    // 監聽視窗大小變更事件
+    $(window).resize(function () {
+        // 檢查視窗大小
+        checkWindowSize();
+    });
+});
+
+// menu---------------------------------------------------------
+// .main-menu .container .menu-list
 
 let menuSideLists = document.querySelectorAll(".side-list");
 for (let menuSideList of menuSideLists) {
@@ -58,8 +112,8 @@ for (let menuSideList of menuSideLists) {
     }
 }
 
-// onlineShop-------------------------------------------
-//.main-onlineShop .shop-list---------------------------------
+// onlineShop---------------------------------------------------------------
+//.main-onlineShop .shop-list
 let onlineTopbars = document.querySelectorAll(".online-topbar");
 for (let onlineTopbar of onlineTopbars) {
     onlineTopbar.onclick = function (event) {
@@ -77,7 +131,7 @@ for (let onlineTopbar of onlineTopbars) {
     }
 }
 
-// .main-onlineShop .shop-list .icon-cart-----------------------------------
+// .main-onlineShop .shop-list .icon-cart
 let iconCarts = document.querySelectorAll(".icon-cart");
 for (let iconCart of iconCarts) {
     iconCart.onclick = e => {
@@ -186,7 +240,11 @@ function updateTotal() {
 }
 */
 
-//order-confirm(random-number)
+
+
+
+
+//order-confirm(random-number)-----------------------------------------------
 
 // 等待整個文檔都載入完畢
 document.addEventListener('DOMContentLoaded', function () {
