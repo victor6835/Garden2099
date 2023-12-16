@@ -67,6 +67,7 @@ body {
 
 .main-cart .cart-list .cart-table {
     .btnMinus {
+        padding: 1px;
         width: 35px;
         height: 35px;
         background-color: #fff;
@@ -78,6 +79,7 @@ body {
 
     }
     .btnPlus {
+        padding: 1px;
         width: 35px;
         height: 35px;
         background-color: #fff;
@@ -187,6 +189,7 @@ body {
         width: 2%;
     }
     .main-cart .cart-list .cart-table {
+        text-decoration: none;
         .btnMinus {
             width: 25px;
             height: 25px;
