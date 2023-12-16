@@ -99,6 +99,44 @@ for (let itemSmall of itemSmalls) {
 
 // cart------------------------------------------------------------------------
 function updateQuantity(btnElement, change) {
+    const qtyInput = btnElement.parentNode.querySelector('.qty');
+    let currentQuantity = parseInt(qtyInput.value);
+
+    if (currentQuantity + change >= 0) {
+        currentQuantity += change;
+        qtyInput.value = currentQuantity;
+        updateTotal();
+    }
+}
+
+function removeProduct(btnElement) {
+    const qtyInput = btnElement.parentNode.parentNode.querySelector('.qty');
+    qtyInput.value = 0;
+    updateTotal();
+}
+
+function updateTotal() {
+    let total = 0;
+    let resultTotal = 0;
+
+    document.querySelectorAll('.product').forEach((product) => {
+        const price = parseFloat(product.getAttribute('data-price'));
+        const quantity = parseInt(product.querySelector('.qty').value);
+        const itemTotal = price * quantity;
+
+        total += itemTotal;
+    });
+
+    if (total > 0) {
+        resultTotal = total + 60;
+    }
+
+    document.getElementById('totalAmount').textContent = "$" + total.toFixed(2);
+    document.getElementById('totalAmountResult').textContent = "$" + resultTotal.toFixed(2);
+}
+
+/*
+function updateQuantity(btnElement, change) {
     // console.log(btnElement);
     // console.log(btnElement.parentNode);
     const qtyInput = btnElement.parentNode.querySelector('.qty');
@@ -146,7 +184,7 @@ function updateTotal() {
     document.getElementById('totalAmount').textContent = "$" + total.toFixed(2);
     document.getElementById('totalAmountResult').textContent = "$" + resultTotal.toFixed(2);
 }
-
+*/
 
 //order-confirm(random-number)
 
