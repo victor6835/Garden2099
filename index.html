@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>首頁|Garden 2099</title>
+    <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
 </head>
 <!-- reset -->
 <link rel="stylesheet" href="reset.css">
@@ -308,31 +309,31 @@
         <div class="container">
             <h2 class="wow bounceInUp">最新消息<br>Lastest News</h2>
             <div class="news-box wow fadeInUp">
-                <div class="card small">
+                <div class="news-card first">
                     <img
                         src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fbutter.jpg?alt=media&token=2f048254-8f74-4f33-a0fa-0951df9ac0d5">
                     <h3> 【Garden 2099開幕優惠】首週訂位享受10%折扣加碼九折餐券，感受科技與綠意的奇妙交融。</h3>
                     <p class="date">2099/20/99</p>
                 </div>
-                <div class="card middle">
+                <div class="news-card ">
                     <img
                         src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2FBreakfast%20Neon%20Sign%20-%2047%20inch%20_%20120%20cm_.jpg?alt=media&token=3de516f2-ca88-4d03-ad96-45cd57a5230e">
                     <h3>即刻預訂「未來之夜」，Garden 2099 精心設計的特製菜單，讓您沉浸在未來的美食饗宴。</h3>
                     <p class="date">2099/20/99</p>
                 </div>
-                <div class="card large">
+                <div class="news-card ">
                     <img
-                        src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fwordlogo3.png?alt=media&token=63c6e9a8-4d03-42d6-80a1-603411510561">
+                        src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2FBreakfast%20Neon%20Sign%20-%2047%20inch%20_%20120%20cm_%201.png?alt=media&token=a3c0c647-6516-43ea-9420-1962d27cff04">
                     <h3>Garden 2099夜間霓虹秀即將開始，每晚8點，餐廳外牆將點亮成未來都市的夢幻景象。</h3>
                     <p class="date">2099/20/99</p>
                 </div>
-                <div class="card middle">
+                <div class="news-card ">
                     <img
-                        src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2FMetal%20Poster%20Ramen%20Circle%20Sign.jpg?alt=media&token=efdc289a-b4d2-453d-9cd0-a4dd41cade29">
+                        src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fwordlogo2.svg?alt=media&token=725f2b95-c110-4ed5-bfe9-1f8ce91d02b4">
                     <h3>感謝各位支持！Garden 2099推出會員計畫，搶先獲取獨家優惠和未來主題活動資訊。</h3>
                     <p class="date">2099/20/99</p>
                 </div>
-                <div class="card small">
+                <div class="news-card last">
                     <img
                         src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2FChinese%20food%20logo%20neon%20sign%20emblem%20vector%20image%20on%20VectorStock.jpg?alt=media&token=b149d10f-7127-41ad-b824-9f93dfbf0bc5">
                     <h3>快來感受Garden 2099獨特的植物牆，帶來城市中的一絲翠綠，融合科技與自然的完美之作。</h3>
@@ -340,14 +341,14 @@
                 </div>
             </div>
             <div class="icons">
-                <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fback.svg?alt=media&token=749f69c1-9bb1-4cca-83a5-f2b62f8124e0"
+                <img id="news-back" src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fback.svg?alt=media&token=749f69c1-9bb1-4cca-83a5-f2b62f8124e0"
                     alt="">
-                <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fnext.svg?alt=media&token=8b12c66f-f9c6-4534-a35b-bc38597c7dae"
+                <img id="news-next" src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fnext.svg?alt=media&token=8b12c66f-f9c6-4534-a35b-bc38597c7dae"
                     alt="">
             </div>
         </div>
-
     </section>
+
     <section class="contact">
         <div class="container">
             <div class="map" id="position">
@@ -419,7 +420,7 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; Garden 2099, Inc. All Rights Reserved.
+            &copy; Garden 2099, Inc. All Rights Reserved.<br>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。<br>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。
         </div>
     </section>
 
@@ -438,6 +439,25 @@
             }
             prevScrollPos = currentScrollPos;
         };
+    </script>
+    <script>
+        //按按鈕，輪播卡片，新品上市
+        function newsCarousel() {
+        const carousel = document.querySelector('.news-box');
+        const cards = document.querySelectorAll('.news-card');
+        if(cards.length === 0) return; // 確保有卡片存在
+        // const cardWidth = cards[0].offsetWidth + 24; // 20是卡片之間的間隙
+        const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginRight);
+        document.getElementById('news-back').addEventListener('click', () => {
+            carousel.scrollLeft -= cardWidth;
+        });
+        document.getElementById('news-next').addEventListener('click', () => {
+            console.log(carousel, carousel.scrollLeft, cardWidth)
+            carousel.scrollLeft += cardWidth;
+        });
+    }
+    // 當文檔加載完成時
+    document.addEventListener('DOMContentLoaded', newsCarousel);
     </script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

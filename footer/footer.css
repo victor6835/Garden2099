@@ -88,11 +88,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: 20px;
-    line-height: 300%;
-}
-.main-footer .copyright::after {
-    content: "本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。";
+    line-height: 140%;
 }
 }
 
@@ -180,9 +178,7 @@
     }
     
     .copyright {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
 }
 
