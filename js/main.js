@@ -36,9 +36,6 @@ for (let smallIntro of smallIntros) {
     }
 }
 
-//WOW plugin initialize
-new WOW().init();
-
 // menu---------------------------------------------------------
 // .main-menu .container .menu-list
 
@@ -212,3 +209,6 @@ $(document).ready(function () {
         checkWindowSize();
     });
 });
+
+//WOW plugin initialize
+new WOW().init();

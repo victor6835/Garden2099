@@ -27,7 +27,7 @@
             <a href="/Garden2099/index.html" class="logo"><img
                     src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Ffinal%20logo-noborder.png?alt=media&token=c1a5732d-722b-40eb-93a0-95c30bc5044e"
                     alt=""></a>
-<!-- Hamburger---------------------------------------- -->
+            <!-- Hamburger---------------------------------------- -->
             <a href="#overlay" class="menu-toggle">
                 <span></span><span></span><span></span>
             </a>
@@ -48,8 +48,8 @@
                     <span></span>
                     <span></span>
                 </a>
-            </div>   
-<!-- Hamburger-end--------------------- -->
+            </div>
+            <!-- Hamburger-end--------------------- -->
             <nav class="right">
                 <a class="shop" href="/Garden2099/onlineShop/onlineShop.html">線上購物</a>
                 <a class="position" href="/Garden2099/index.html#position">位置資訊</a>
@@ -61,11 +61,11 @@
     <div class="banner">
         <img src="https://firebasestorage.googleapis.com/v0/b/garden2099-3ee26.appspot.com/o/Garden2099%2Fconfirm_Image%20Upscaler%20(1).jpg?alt=media&token=44cdb195-2cf2-40e2-9c04-28580bbf0d81"
             alt="" class="outside">
-            <svg class="banner-text">
-                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                    Reservation
-                </text>
-            </svg>    
+        <svg class="banner-text">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Reservation
+            </text>
+        </svg>
     </div>
 
     <div class="main-online-reserve">
@@ -73,8 +73,9 @@
             <header>
                 <h1>線上訂位</h1>
                 <small>歡迎蒞臨Garden 2099，有訂位需求的顧客，請填寫以下資訊</small>
+                
             </header>
-            <form class="form">
+            <form class="form" action="/Garden2099/reserve-confirmed/reserve-confirm.html" method="get" id="form" onsubmit="return submitForm()" >
                 <h4>用餐時間</h4>
                 <div class="time">
                     <div class="date">
@@ -82,7 +83,7 @@
                         <label for="order_date"></label><input type="date" id="order_date">
                     </div>
 
-                    <h5  class="moment">用餐時段</h5>
+                    <h5 class="moment">用餐時段</h5>
                     <div class="moment">
                         <div class="moment-radio">
                             <div class="left">
@@ -120,24 +121,42 @@
                     <select name="adolt" id="adolt">
                         <option value="">請選擇人數</option>
                         <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select><br>
                     <label for="child">小孩</label>
                     <select name="child" id="child">
                         <option value="">請選擇人數</option>
                         <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
                 </div>
                 <h4>訂位資訊</h4>
                 <div class="order-info">
 
                     <label for="yourname">您的大名</label>
-                    <input type="text" id="yourname" value="" placeholder="請輸入您的大名"><br>
+                    <input type="text" id="yourname" placeholder="請輸入您的大名"><br>
                     <label for="tele">您的電話</label>
-                    <input type="text" id="yourfone" value="" placeholder="請輸入您的電話">
+                    <input type="tel" id="tele" placeholder="請輸入您的電話">
 
                 </div>
 
-                <button id="OlineReserve">送出</button>
+                <input type="submit" id="submit" value="提交">
 
                 <div class="restaurant-info">
                     <h2>餐廳資訊</h2>
@@ -145,6 +164,27 @@
                         (周一公休)。<br>訂位將保留10分鐘，如違時視現場狀況重新安排座位；用餐時間2小時。,<br>信用卡付費享9折。<br>消費當日如需慶生請事先告知，本電會於甜點盤上裝飾祝賀文字。</p>
                 </div>
             </form>
+            <script>
+                function submitForm(){
+                    let order_date = document.getElementById("order_date").value;
+                    localStorage.setItem("order_date", order_date)
+
+                    let selectedTime = document.querySelector('input[name="time"]:checked').value;
+                    localStorage.setItem("selectedTime", selectedTime);
+
+                    let adolt = document.getElementById("adolt").value;
+                    localStorage.setItem("adolt", adolt);
+
+                    let child = document.getElementById("child").value;
+                    localStorage.setItem("child", child);
+
+                    let yourname = document.getElementById("yourname").value;
+                    localStorage.setItem("yourname", yourname);
+                    
+                    let tele = document.getElementById("tele").value;
+                    localStorage.setItem("tele", tele);
+                }
+            </script>
 
         </div>
     </div>
@@ -184,19 +224,9 @@
             &copy; Garden 2099, Inc. All Rights Reserved.
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // 當按鈕被點擊時
-            $("#OlineReserve").click(function (event) {
-                // 使用 window.location.href 跳轉到指定的頁面
-                window.location.href = "/Garden2099/reserve-confirmed/reserve-confirm.html";
 
-                // 阻止表單的默認提交行為
-                event.preventDefault();
-            });
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   
     <script>
         let prevScrollPos = window.pageYOffset;
         const header = document.querySelector("header"); // 根據你的 HTML 結構確保正確的選擇器
@@ -213,6 +243,7 @@
             prevScrollPos = currentScrollPos;
         };
     </script>
+    
 
 </body>
 

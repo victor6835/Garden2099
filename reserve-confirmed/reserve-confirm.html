@@ -83,32 +83,39 @@
                             <th>姓名</th>
                         </tr>
                         <tr>
-                            <td>Lucy</td>
+                            <td id="reserve-name">Lucy</td>
                         </tr>
                         <tr>
                             <th>電話</th>
                         </tr>
                         <tr>
-                            <td>0966666666</td>
+                            <td id="reserve-phone">0966666666</td>
                         </tr>
                         <tr>
                             <th>日期</th>
                         </tr>
                         <tr>
-                            <td>2099 / 20 / 20</td>
+                            <td id="reserve-date">2099 / 20 / 20</td>
                         </tr>
                         <tr>
                             <th>時段</th>
                         </tr>
                         <tr>
-                            <td>17:00</td>
+                            <td id="reserve-time">17:00</td>
                         </tr>
                         <tr>
-                            <th>人數</th>
+                            <th>大人</th>
                         </tr>
                         <tr>
-                            <td>2大3小</td>
+                            <td id="reserve-adult">1</td>
                         </tr>
+                        <tr>
+                            <th>小孩</th>
+                        </tr>
+                        <tr>
+                            <td id="reserve-child">1</td>
+                        </tr>
+
                     </table>
                     
                     <div class="sent">
@@ -169,6 +176,26 @@
         prevScrollPos = currentScrollPos;
     };
 </script>
+<script>
+    let order_date = localStorage.getItem("order_date");
+    let selectedTime = localStorage.getItem("selectedTime");
+    let adolt = localStorage.getItem("adolt");
+    let child = localStorage.getItem("child");
+    let yourname = localStorage.getItem("yourname");
+    let tele = localStorage.getItem("tele");
+
+    document.getElementById("reserve-name").textContent = yourname;
+    document.getElementById("reserve-phone").textContent = tele;
+    document.getElementById("reserve-date").textContent = order_date;
+    document.getElementById("reserve-time").textContent = selectedTime;
+    document.getElementById("reserve-adult").textContent = adolt;
+    document.getElementById("reserve-child").textContent = child;
+
+    // 清除本地存储，防止数据被重复显示
+    // localStorage.removeItem("yourname");
+    // localStorage.removeItem("yourPhone");
+</script>
+
 <script src="/Garden2099/js/main.js"></script>
 </body>
 </html>

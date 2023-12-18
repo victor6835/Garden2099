@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/Garden2099/reserve-confirmed/test.html" method="get" onsubmit="return submitForm()">
+        <label for="Victor"></label>
+        <input type="text" id="Victor">
+        <input type="submit" value="提交">
+    </form>
+    <script>
+        function submitForm(){
+            let Victor = document.getElementById("Victor").value;
+        localStorage.setItem("Victor", Victor);
+        }
+    </script>
+</body>
+</html>

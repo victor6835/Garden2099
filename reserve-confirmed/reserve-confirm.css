@@ -40,6 +40,11 @@ body {
     color: #ffffff;
 }
 
+#order-number{
+    text-decoration: underline;
+    color: #FBC528;
+}
+
 .main-reserve .reserve-number .reserve-detail {
     font-size: 36px;
 }
