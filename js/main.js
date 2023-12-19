@@ -152,7 +152,8 @@ function generateRandomOrderNumber() {
     return String(randomNum).substring(0, 10);
 }
 
-
+//WOW plugin initialize
+new WOW().init();
 // index(放在上面干擾)------------------------------------------------------------------
 //.picinfo .tobar-phone
 $(document).ready(function () {
@@ -210,5 +211,3 @@ $(document).ready(function () {
     });
 });
 
-//WOW plugin initialize
-new WOW().init();
